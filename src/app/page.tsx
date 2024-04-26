@@ -3,7 +3,6 @@ import NhLogo from "./components/NhLogo";
 import VideoBkgd from "./components/VideoBkgd";
 import Image from "next/image"; 
 import ScrollIcon from "./components/ScrollIcon";
-import { Head } from "next/document";
 
 export default function Home() {
 
