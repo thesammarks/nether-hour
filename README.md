@@ -4,12 +4,17 @@ Website for Nether Hour, a band in Austin, TX.
 
 ## Run Locally
 
+Install dependencies:
+
 ```bash
 npm i
 ```
+
+Run:
+
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to [http://localhost:3000](http://localhost:3000) to view.
