@@ -1,6 +1,6 @@
 # netherhour.com
 
-Website for Nether Hour, a band in Austin, TX.
+Website for Nether Hour, a band currently groovin' in Austin, TX.
 
 ## Run Locally
 
