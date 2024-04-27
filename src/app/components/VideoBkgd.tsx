@@ -9,6 +9,7 @@ const VideoBkgd = () => {
                 autoPlay
                 loop 
                 muted 
+                playsInline
                 preload="none">
                 <source src="/videos/nh.mp4" type="video/mp4" />
             </video>
