@@ -10,7 +10,7 @@ const VideoBkgd = () => {
                 loop 
                 muted 
                 preload="none">
-                <source src="/nh.mp4" type="video/mp4" />
+                <source src="/videos/nh.mp4" type="video/mp4" />
             </video>
         </div>
       );
