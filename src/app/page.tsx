@@ -39,7 +39,7 @@ export default function Home() {
                 <div className="font-semibold">Latest Album</div>
               </div>
               <Image
-                src="/images/rattlesnake_gumbo.jpg"
+                src="/nether-hour/images/rattlesnake_gumbo.jpg"
                 width={250}
                 height={250}
                 alt="RattleSnake Gumbo"
@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="font-semibold">Latest Single</div>
               </div>
               <Image
-                src="/images/dancing_on_the_line.jpg"
+                src="/nether-hour/images/dancing_on_the_line.jpg"
                 width={250}
                 height={250}
                 alt="Dancing on the Line"
