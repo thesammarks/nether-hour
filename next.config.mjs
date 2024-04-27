@@ -12,14 +12,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/nether-hour",
-
-  /**
-   * Set asset prefix. 
-   *
-   * @see https://nextjs.org/docs/app/api-reference/next-config-js/assetPrefix
-   */
-  assetPrefix: '/nether-hour/', // assetPrefix requires the trailing slash
+  basePath: "/",
 
   /**
    * Disable server-based image optimization. Next.js does not support
