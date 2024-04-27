@@ -27,7 +27,7 @@ const SocialIcons = () => {
     return (
       <div className="absolute top-10 z-20 flex gap-3">
         <SocialIcon 
-            className="max-sm:w-[12px] drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]"
+            className="drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]"
             ref={glitch.ref}
             url="https://open.spotify.com/artist/7xFkiQ9B6WA6932TniPRGr/"
             {...iconProps}
