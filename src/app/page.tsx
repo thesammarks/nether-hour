@@ -28,7 +28,7 @@ export default function Home() {
           </div>
           <div>
             The group actively performs around the Live Music Capital of the World and has quickly become a staple in the local music scene.
-            Listen to their latest single now, <a className="font-bold italic" href="https:/https://open.spotify.com/album/4FbVIUqviL1clsbL1Ql3wS/" target="_blank" rel="noopener noreferrer">Dancing on the Line</a>. 
+            Listen to their latest single now, <a className="font-bold italic" href="https://open.spotify.com/track/1DbPDhNObD6ZZjKK7IZL7t/" target="_blank" rel="noopener noreferrer">Dancing on the Line</a>. 
           </div>
         </div>
         
@@ -40,7 +40,8 @@ export default function Home() {
               href="https://inncahoots.com/public-bars/austin-garden-studio/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex flex-col items-center">
+              className="flex flex-col items-center"
+            >
               <div className="font-bold">Austin Garden & Studio</div> 
               <div>1209 E 6th St, Austin, TX 78702</div>
               <div>Saturdays (4PM-6PM)</div>
@@ -49,7 +50,8 @@ export default function Home() {
               href="https://wtficehouse.com/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex flex-col items-center">
+              className="flex flex-col items-center"
+            >
               <div className="font-bold">WTF Ice House</div>
               <div>701 W 6th St, Austin, TX 78701</div>
               <div>Sundays (5PM-8PM)</div>
@@ -99,7 +101,7 @@ export default function Home() {
         </div>
 
         {/* Band Members */}
-        <div className="flex flex-col items-center gap-5 max-w-5xl">
+        <div className="flex flex-col items-center gap-5">
           <div className="text-2xl font-bold">Band Members</div>
           <div className="grid grid-cols-2 gap-x-4">
             <a className="justify-self-end font-semibold" href="https://www.instagram.com/bobflaco13/" target="_blank" rel="noopener noreferrer">Bobby Flaco</a>
