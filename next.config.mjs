@@ -23,6 +23,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+
+  /**
+   * Redirect everything to '/'
+   */
+  async redirects() {
+    return [
+      {
+        source: '/:path',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;
