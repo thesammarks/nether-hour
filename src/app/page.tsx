@@ -33,7 +33,7 @@ export default function Home() {
         </div>
         
         {/* Upcoming Shows */}
-        <div className="flex flex-col items-center gap-5 max-w-5xl text-center">
+        <div className="flex flex-col items-center gap-5 max-w-[80%] text-center">
           <div className="text-2xl font-bold">Upcoming Shows</div>
           <div className="flex max-sm:flex-col gap-10 max-sm:gap-5">
             <a 
@@ -112,9 +112,9 @@ export default function Home() {
         </div>
 
         {/* Booking */}
-        <div className="flex flex-col text-center items-center gap-5 max-w-sm">
+        <div className="flex flex-col text-center items-center gap-5 max-w-[80%]">
           <div className="text-2xl font-bold">Booking</div>
-          <div className="max-w-[350px]">Email <a className="font-bold" href="mailto:netherhour@gmail.com">netherhour@gmail.com</a> for booking and business inquires</div>
+          <div className="max-w-[300px]">Email <a className="font-bold" href="mailto:netherhour@gmail.com">netherhour@gmail.com</a> for booking and business inquires</div>
         </div>
 
         <div>
