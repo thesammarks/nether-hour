@@ -9,6 +9,7 @@ const iconProps = {
     rel: "noopener noreferrer",
     bgColor: "rgba(229,227,211,0.8)",
     fgColor: "black",
+    // style: "width: 20px",
 }
 
 const SocialIcons = () => {
@@ -26,7 +27,7 @@ const SocialIcons = () => {
     
     return (
       <div className="absolute top-10 z-20 flex gap-3">
-        <SocialIcon 
+        <SocialIcon
             className="drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]"
             ref={glitch.ref}
             url="https://open.spotify.com/artist/7xFkiQ9B6WA6932TniPRGr/"
@@ -58,7 +59,7 @@ const SocialIcons = () => {
             {...iconProps}
         />
         <SocialIcon
-            className="drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]"
+            className="max-sm:hidden drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]"
             ref={glitch.ref}
             url="https://www.facebook.com/thenetherhour/"
             {...iconProps}
