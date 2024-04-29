@@ -37,8 +37,8 @@ export default function Home() {
           <div className="text-2xl font-bold">Upcoming Shows</div>
           <div className="flex max-sm:flex-col gap-10 max-sm:gap-5">
             <a 
-              href="https://inncahoots.com/public-bars/austin-garden-studio/" 
-              target="_blank" 
+              href="https://inncahoots.com/public-bars/austin-garden-studio/"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center"
             >

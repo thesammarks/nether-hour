@@ -7,8 +7,8 @@ import { useGlitch } from 'react-powerglitch'
 const iconProps = {
     target: "_blank",
     rel: "noopener noreferrer",
-    bgColor: "rgba(229,227,211,0.8)",
-    fgColor: "black",
+    bgColor: "transparent",
+    fgColor: "rgba(229,227,211,0.8)",
     // style: "width: 20px",
 }
 

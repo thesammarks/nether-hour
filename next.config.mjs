@@ -23,7 +23,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-
+ 
   /**
    * Redirect everything to '/'
    */
