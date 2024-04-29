@@ -124,7 +124,7 @@ export default function Home() {
         </div>
 
         <footer className="flex text-xs">
-            © 2024 Nether Family Records | Website by&nbsp;<b><a href="https://github.com/samuelbmarks/" target="_blank" rel="noopener noreferrer">Sam</a></b>
+            © 2024 Nether Family Records | Website by&nbsp;<b><a href="https://justcallmesam.com/" target="_blank" rel="noopener noreferrer">Sam</a></b>
         </footer>
       </div>
     </main>
