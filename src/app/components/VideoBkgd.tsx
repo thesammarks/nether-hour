@@ -12,6 +12,7 @@ const VideoBkgd = () => {
                 playsInline
                 preload="none">
                 <source src="/videos/nh.mp4" type="video/mp4" />
+                <source src="/videos/nh.webm" type="video/webm" />
             </video>
         </div>
       );
