@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.2",
+    "next": "15.1.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-feather": "^2.0.10",
     "react-powerglitch": "^1.0.3",
     "react-social-icons": "^6.16.0",
     "react-youtube": "^10.1.0"
