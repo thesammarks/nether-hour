@@ -12,10 +12,26 @@ const Videos = () => {
     return (
         <div className="flex flex-col gap-12 text-center">
             <div className="flex flex-col items-center gap-5">
-                <span className="text-2xl font-semibold">Latest Releases</span>
+                <span className="text-2xl font-semibold">Chill Country Sessions</span>
                 <div className="flex max-md:flex-col justify-center gap-5">
-                    <YouTube videoId="Ks5ciN3HdXE" opts={opts}/>
-                    <YouTube videoId="YZF7TIXTmeI" opts={opts}/>
+                    <YouTube videoId="C07McuC-kEc" opts={opts}/>
+                    <YouTube videoId="2hhuFnYdw-A" opts={opts}/>
+                </div>
+            </div>
+
+            <div className="flex flex-col items-center gap-5">
+                <span className="text-2xl font-semibold">Mount Bonnell Sessions</span>
+                <div className="flex max-md:flex-col justify-center gap-5">
+                    <YouTube videoId="dm4wNVA0Z_Q" opts={opts}/>
+                    <YouTube videoId="yHDtAyKV2ZY" opts={opts}/>
+                </div>
+            </div>
+
+            <div className="flex flex-col items-center gap-5">
+                <span className="text-2xl font-semibold">Eclipse Sessions</span>
+                <div className="flex max-md:flex-col justify-center gap-5">
+                    <YouTube videoId="uy0YU72qSkg" opts={opts}/>
+                    <YouTube videoId="mZCXt6cvVMc" opts={opts}/>
                 </div>
             </div>
 

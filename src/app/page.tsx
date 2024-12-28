@@ -77,12 +77,12 @@ export default function Home() {
         <div className="flex flex-col items-center gap-5">
           <div className="text-2xl font-bold">Band Members</div>
           <div className="grid grid-cols-2 gap-x-4">
-            <a className="justify-self-end font-semibold" href="https://www.instagram.com/bobflaco13/" target="_blank" rel="noopener noreferrer">Bobby Flaco</a>
-            <a href="https://www.instagram.com/bobflaco13/" target="_blank" rel="noopener noreferrer">@bobflaco13</a>
-            <a className="justify-self-end font-semibold" href="https://www.instagram.com/loverboybishop/" target="_blank" rel="noopener noreferrer">Bishop</a>
-            <a href="https://www.instagram.com/loverboybishop/" target="_blank" rel="noopener noreferrer">@loverboybishop</a>
             <a className="justify-self-end font-semibold" href="https://www.instagram.com/_bercy/" target="_blank" rel="noopener noreferrer">Bercy</a>
             <a href="https://www.instagram.com/_bercy/" target="_blank" rel="noopener noreferrer">@_bercy</a>
+            <a className="justify-self-end font-semibold" href="https://www.instagram.com/loverboybishop/" target="_blank" rel="noopener noreferrer">Bishop</a>
+            <a href="https://www.instagram.com/loverboybishop/" target="_blank" rel="noopener noreferrer">@loverboybishop</a>
+            <a className="justify-self-end font-semibold" href="https://www.instagram.com/bobflaco13/" target="_blank" rel="noopener noreferrer">Bobby Flaco</a>
+            <a href="https://www.instagram.com/bobflaco13/" target="_blank" rel="noopener noreferrer">@bobflaco13</a>
           </div>
         </div>
 
