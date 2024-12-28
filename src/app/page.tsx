@@ -23,42 +23,15 @@ export default function Home() {
             <div className="max-sm:hidden">/ˈneT͟Hər ou(ə)r/</div>
           </div>
           <div>
-              <b>Nether Hour</b> is an Austin-based band that fuses Louisiana and Texas styles of funk, blues, soul, and rock & roll. 
-              Since their formation during SXSW 2018, the group has released serveral originals, including their 2023 studio albumn, <a className="font-bold italic" href="https:/https://open.spotify.com/album/4FbVIUqviL1clsbL1Ql3wS/" target="_blank" rel="noopener noreferrer">Rattlesnake Gumbo</a>.                 
+              <b>Nether Hour</b> is an Austin-based band that fuses Louisiana and Texas styles of funk, blues, soul, and rock & roll. Since their formation during SXSW 2018, the group has released serveral originals, including their 2023 and 2024 studio albums,{' '}
+              <a className="font-bold italic" href="https://open.spotify.com/album/4FbVIUqviL1clsbL1Ql3wS" target="_blank" rel="noopener noreferrer">Rattlesnake Gumbo</a> and{' '}
+              <a className="font-bold italic" href="https://open.spotify.com/album/0CJY4hih3MeO8rmCpbxxHt" target="_blank" rel="noopener noreferrer">SUNSHINE</a>.
           </div>
           <div>
-            The group actively performs around the Live Music Capital of the World and has quickly become a staple in the local music scene.
-            Listen to their latest single now, <a className="font-bold italic" href="https://open.spotify.com/track/1DbPDhNObD6ZZjKK7IZL7t/" target="_blank" rel="noopener noreferrer">Dancing on the Line</a>. 
+            The group actively performs around the Live Music Capital of the World and has quickly become a staple in Austin's local music scene. Listen to their latest releases now on{' '}
+            <a className="font-bold italic" href="https://open.spotify.com/artist/7xFkiQ9B6WA6932TniPRGr" target="_blank" rel="noopener noreferrer">Spotify</a> and{' '}
+            <a className="font-bold italic" href="https://music.apple.com/us/artist/nether-hour/1544082556" target="_blank" rel="noopener noreferrer">Apple Music</a>.
           </div>
-        </div>
-        
-        {/* Upcoming Shows */}
-        <div className="flex flex-col items-center gap-5 max-w-[80%] text-center">
-          <div className="text-2xl font-bold">Upcoming Shows</div>
-          <div className="flex max-sm:flex-col gap-10 max-sm:gap-5">
-            <a 
-              href="https://inncahoots.com/public-bars/austin-garden-studio/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col items-center"
-            >
-              <div className="font-bold">Austin Garden & Studio</div> 
-              <div>1209 E 6th St, Austin, TX 78702</div>
-              <div>Saturdays (4PM-6PM)</div>
-            </a>
-            <a 
-              href="https://wtficehouse.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex flex-col items-center"
-            >
-              <div className="font-bold">WTF Ice House</div>
-              <div>701 W 6th St, Austin, TX 78701</div>
-              <div>Sundays (5PM-8PM)</div>
-            </a>
-          </div>  
-          <div>THESE SHOWS ARE FREE AND WEEKLY</div>
-          <div className="max-w-[350px]">For the latest updates and showtimes, follow <a className="font-bold" href="https://instagram.com/netherhour" target="_blank" rel="noopener noreferrer">@netherhour</a> on Instagram</div>
         </div>
 
         {/* Listen Now */}
@@ -116,7 +89,7 @@ export default function Home() {
         {/* Booking */}
         <div className="flex flex-col text-center items-center gap-5 max-w-[80%]">
           <div className="text-2xl font-bold">Booking</div>
-          <div className="max-w-[300px]">Email <a className="font-bold" href="mailto:netherhour@gmail.com">netherhour@gmail.com</a> for booking and business inquires</div>
+          <div className="max-w-[300px]">Email <a className="font-bold" href="mailto:netherhour@gmail.com">netherhour@gmail.com</a> for booking and business inquires.</div>
         </div>
 
         <div>
