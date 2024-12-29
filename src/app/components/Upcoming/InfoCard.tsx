@@ -1,10 +1,9 @@
 "use client"
 
 import Image from "next/image"; 
-import { Button, Card, CardBody, CardFooter, CardHeader } from "@nextui-org/react";
-import { Instagram } from "react-feather"
+import { Card, CardBody, CardHeader } from "@nextui-org/react";
 
-interface ShowInfoCardProps {
+interface InfoCardProps {
     header: string;
     title: string;
     icon: React.ElementType
@@ -14,7 +13,7 @@ interface ShowInfoCardProps {
     img: string;
 }
 
-const ShowInfoCard = (props: ShowInfoCardProps) => {
+const InfoCard = (props: InfoCardProps) => {
     return (
         <Card
             className="
@@ -49,4 +48,4 @@ const ShowInfoCard = (props: ShowInfoCardProps) => {
     );
   };
   
-export default ShowInfoCard;
+export default InfoCard;

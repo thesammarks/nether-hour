@@ -1,16 +1,16 @@
 'use client'
 
 import { ExternalLink, Instagram } from "react-feather";
-import ShowInfoCard from "./ShowInfoCard";
+import InfoCard from "./InfoCard";
 
-const ShowInfoCards = () => {
+const InfoCards = () => {
     return (
         <div className="
             flex flex-nowrap gap-5 max-w-[75%] 
             rounded-xl overflow-x-auto px-4 py-4 max-xl:pb-6
             bg-gradient-to-b from-neutral-700 to-neutral-600
         ">
-            <ShowInfoCard
+            <InfoCard
                 header="Get Tickets"
                 title="Nether Hour"
                 icon={ExternalLink}
@@ -19,7 +19,7 @@ const ShowInfoCards = () => {
                 url="https://www.eventticketscenter.com/nether-hour-boulder-01-31-2025/6784804/t"
                 img="/images/fox_theatre_flyer.jpg"
             />
-            <ShowInfoCard
+            <InfoCard
                 header="Get Tickets"
                 title="Nether Hour & Horse Bitch"
                 icon={ExternalLink}
@@ -28,7 +28,7 @@ const ShowInfoCards = () => {
                 url="https://www.eventticketscenter.com/nether-hour-horse-bitch-fort-collins-02-01-2025/6783064/t"
                 img="/images/aggie_theatre_flyer.jpg"
             />
-            <ShowInfoCard
+            <InfoCard
                 header="Latest Updates"
                 title="Follow @netherhour"
                 icon={Instagram} 
@@ -41,4 +41,4 @@ const ShowInfoCards = () => {
     );
 };
 
-export default ShowInfoCards;
+export default InfoCards;
