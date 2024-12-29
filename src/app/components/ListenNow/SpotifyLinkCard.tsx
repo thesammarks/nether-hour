@@ -15,7 +15,7 @@ const SpotifyLinkCard = (props: SpotifyLinkCardProps) => {
     return (
         <Card
             className="
-                mx-2 p-2 w-[250px] min-w-[250px] max-w-[250px]
+                p-2 min-w-[250px] max-w-[250px] 
                 rounded-xl overflow-hidden drop-shadow-xl
                 bg-neutral-800 hover:bg-neutral-900
                 transition-all duration-300 ease-in-out

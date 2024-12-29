@@ -2,22 +2,14 @@
 
 import { ExternalLink, Instagram } from "react-feather";
 import InfoCard from "./InfoCard";
-import Slider from "@ant-design/react-slick";
 
 const InfoCards = () => {
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        swipeToSlide: true,
-    };
-        
     return (
-        <div className="content-center whitespace-nowrap max-w-[900px] max-lg:max-w-[75%] rounded-xl text-center bg-neutral-600 p-4">
-            <Slider {...settings}>
+        <div className="
+            relative flex max-w-[75%] rounded-xl px-4 pt-4 pb-2
+            bg-gradient-to-b from-neutral-700 to-neutral-600
+        ">
+            <div className="flex flex-nowrap gap-5 max-xl:pb-4 overflow-x-scroll my-scrollbar">
                 <InfoCard
                     header="Get Tickets"
                     title="Nether Hour"
@@ -45,7 +37,7 @@ const InfoCards = () => {
                     url="https://instagram.com/netherhour"
                     img="/images/nh_profile.jpg"
                 />
-            </Slider>
+            </div>
         </div>
     );
 };

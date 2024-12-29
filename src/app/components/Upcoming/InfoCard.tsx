@@ -17,7 +17,7 @@ const InfoCard = (props: InfoCardProps) => {
     return (
         <Card
             className="
-                mx-2 p-2 min-w-[275px] max-w-[275px]
+                p-2 min-w-[275px] max-w-[275px]
                 rounded-xl overflow-hidden drop-shadow-xl
                 bg-neutral-800 hover:bg-neutral-900
                 transition-all duration-300 ease-in-out
