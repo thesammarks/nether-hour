@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { Card, CardBody, User } from "@nextui-org/react";
 
