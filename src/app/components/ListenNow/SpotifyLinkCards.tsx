@@ -2,7 +2,7 @@ import SpotifyLinkCard from "./SpotifyLinkCard";
 
 const SpotifyLinkCards = () => {
     return (
-        <div className="max-w-[75%] rounded-xl bg-neutral-500 overflow-x-auto py-4 px-4 flex flex-nowrap gap-5">
+        <div className="max-w-[75%] rounded-xl bg-neutral-600 overflow-x-auto py-4 px-4 flex flex-nowrap gap-5">
             <SpotifyLinkCard
                 title="Look My Way"
                 subtitle="2024 • Single"

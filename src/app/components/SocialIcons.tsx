@@ -4,9 +4,10 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 
 const iconProps = {
+    className: "bg-neutral-900 rounded-2xl",
     target: "_blank",
     rel: "noopener noreferrer",
-    bgColor: "rgba(0,0,0,0.7)",
+    bgColor: "transparent",
     fgColor: "rgba(229,227,211,0.8)",
 }
 
@@ -37,7 +38,7 @@ const SocialIcons = () => {
         <SocialIcon
             url="https://www.facebook.com/thenetherhour"
             {...iconProps}
-            className="max-sm:hidden"
+            className="max-sm:hidden bg-neutral-900 rounded-xl"
         />
       </div>
     );
