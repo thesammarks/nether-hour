@@ -16,7 +16,7 @@ const ShowInfoCards = () => {
                 icon={ExternalLink}
                 venue="Fox Theatre - Boulder, CO"
                 dates="Friday, Jan 31, 2025 - 8 P.M."
-                url="https://open.spotify.com/album/2ITCfEO8ZYCIbOe8QVLiB0"
+                url="https://www.eventticketscenter.com/nether-hour-boulder-01-31-2025/6784804/t"
                 img="/images/fox_theatre_flyer.jpg"
             />
             <ShowInfoCard
@@ -25,7 +25,7 @@ const ShowInfoCards = () => {
                 icon={ExternalLink}
                 venue="Aggie Theatre - Fort Collins, CO"
                 dates="Saturday, Feb 1, 2025 - 8 P.M."
-                url="https://open.spotify.com/album/1T5NTy3lHhEz2O9Aq1Q6s4"
+                url="https://www.eventticketscenter.com/nether-hour-horse-bitch-fort-collins-02-01-2025/6783064/t"
                 img="/images/aggie_theatre_flyer.jpg"
             />
             <ShowInfoCard
