@@ -1,13 +1,22 @@
-import { Progress } from "@nextui-org/react";
+'use client'
+
 import SpotifyLinkCard from "./SpotifyLinkCard";
+import Slider from "react-slick";
 
 const SpotifyLinkCards = () => {
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        swipeToSlide: true,
+    };
+        
     return (
-        <div className="
-            relative flex max-w-[75%] rounded-xl px-4 pt-4 pb-2
-            bg-gradient-to-b from-neutral-700 to-neutral-600
-        ">
-            <div className="flex flex-nowrap gap-5 pb-4 overflow-x-scroll my-scrollbar">
+        <div className="whitespace-nowrap max-w-[75%] rounded-xl text-center bg-neutral-600 p-4">
+            <Slider {...settings}>
                 <SpotifyLinkCard
                     title="Look My Way"
                     subtitle="2024 • Single"
@@ -44,7 +53,7 @@ const SpotifyLinkCards = () => {
                     url="https://open.spotify.com/album/4FbVIUq3VsBuJJqFL1s20QB87J8AAviL1clsbL1Ql3wS"
                     img="/images/the_hit.jpg"
                 />
-            </div>
+            </Slider>
         </div>
     );
 };
