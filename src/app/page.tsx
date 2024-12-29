@@ -5,7 +5,7 @@ import ScrollIcon from "./components/ScrollIcon";
 import ListenNow from "./components/ListenNow/ListenNow";
 import TheBand from "./components/TheBand/TheBand";
 import React from "react";
-import Upcoming from "./components/Upcoming/Upcoming";
+import UpcomingShows from "./components/UpcomingShows/UpcomingShows";
 
 export default function Home() {  
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <ScrollIcon />
 
       <div className="relative bg-black w-full top-[110vh] flex flex-col items-center gap-10 z-20 pb-16">
-        <Upcoming />
+        <UpcomingShows />
         <TheBand />
         <ListenNow />
 
