@@ -18,6 +18,7 @@ const SpotifyLinkCard = (props: SpotifyLinkCardProps) => {
             isPressable
             onPress={() => window.open(props.url, '_blank')}
             isBlurred
+            isHoverable
             shadow="md"
         >
             <PlayCircle width={16} className="absolute top-3 right-3"/>
