@@ -15,7 +15,7 @@ const SocialIcons = () => {
     return (
         <div className="
                 absolute top-10 z-20 flex gap-4 justify-center 
-                bg-[rgba(38,38,38,0.5)] rounded-xl py-3 px-3">
+                bg-[rgba(38,38,38,0.5)] rounded-xl py-3 px-4">
             <SocialIcon
                 url="https://open.spotify.com/artist/7xFkiQ9B6WA6932TniPRGr"
                 {...iconProps}
