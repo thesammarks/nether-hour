@@ -6,7 +6,6 @@ import ListenNow from "./components/ListenNow/ListenNow";
 import TheBand from "./components/TheBand/TheBand";
 import React from "react";
 import UpcomingShows from "./components/UpcomingShows/UpcomingShows";
-import YouTubeVideos from "./components/YouTubeVideos/YouTubeVideos";
 
 export default function Home() {  
   return (
@@ -20,7 +19,6 @@ export default function Home() {
         <UpcomingShows />
         <TheBand />
         <ListenNow />
-        <YouTubeVideos />
 
         <footer className="flex text-xs">
           © 2024 Nether Family Records | Website by&nbsp;<b><a className="text-[#f40e2d]" href="https://justcallmesam.com/" target="_blank" rel="noopener noreferrer">sam</a></b>
