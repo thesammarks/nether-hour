@@ -15,7 +15,7 @@ export default function Home() {
       <NhLogo />
       <ScrollIcon />
 
-      <div className="relative w-full top-[110vh] flex flex-col items-center gap-10 z-20 pb-16">
+      <div className="relative bg-black w-full top-[110vh] flex flex-col items-center gap-10 z-20 pb-16">
         <UpcomingShows />
         <TheBand />
         <ListenNow />
