@@ -31,20 +31,3 @@ body {
     text-wrap: balance;
   }
 }
-
-@layer components {
-  .my-scrollbar::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-
-  .my-scrollbar::-webkit-scrollbar-track {
-    border-radius: 100vh;
-    background: transparent;
-  }
-
-  .my-scrollbar::-webkit-scrollbar-thumb {
-    background: #171717;
-    border-radius: 100vh;
-  }
-}
