@@ -4,16 +4,15 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons'
 
 const iconProps = {
-    className: "drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]",
     target: "_blank",
     rel: "noopener noreferrer",
-    bgColor: "rgba(0,0,0,0.1)",
+    bgColor: "rgba(0,0,0,0.7)",
     fgColor: "rgba(229,227,211,0.8)",
 }
 
 const SocialIcons = () => {
     return (
-      <div className="absolute top-10 z-20 flex gap-4">
+      <div className="absolute top-10 z-20 flex gap-3">
         <SocialIcon
             url="https://open.spotify.com/artist/7xFkiQ9B6WA6932TniPRGr"
             {...iconProps}
@@ -38,7 +37,7 @@ const SocialIcons = () => {
         <SocialIcon
             url="https://www.facebook.com/thenetherhour"
             {...iconProps}
-            className="max-sm:hidden drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]"
+            className="max-sm:hidden"
         />
       </div>
     );
