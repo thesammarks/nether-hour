@@ -43,7 +43,7 @@ const SpotifyLinkCards = () => {
             <SpotifyLinkCard
                 title="The Hit"
                 subtitle="2021 • Single"
-                url="https://open.spotify.com/album/4FbVIUq3VsBuJJqFL1s20QB87J8AAviL1clsbL1Ql3wS"
+                url="https://open.spotify.com/track/3VsBuJJqFL1s20QB87J8AA?si=e5f962c0b65f4705"
                 img="/images/the_hit.jpg"
             />
         </div>
