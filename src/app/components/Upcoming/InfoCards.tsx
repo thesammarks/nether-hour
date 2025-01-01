@@ -31,6 +31,24 @@ const InfoCards = () => {
                 url="https://www.eventticketscenter.com/nether-hour-horse-bitch-fort-collins-02-01-2025/6783064/t"
                 img="/images/aggie_theatre_flyer.jpg"
             />
+            <InfoCard
+                header="Get Tickets"
+                title="Nether Hour / The Palisades"
+                icon={ExternalLink}
+                venue="Continental Club - Houston, TX"
+                dates="Friday, Jan 24, 2025 - 10:30 P.M."
+                url="https://continental-club-houston.square.site/product/jan-24-2025-nether-hour-the-palisades/980"
+                img="/images/continental_club_jan_24.jpg"
+            />
+            <InfoCard
+                header="Weekly Shows"
+                title="SUNDAY SERVICE + more"
+                icon={Instagram}
+                venue="Whiskey Tango Foxtrot - Austin, TX"
+                dates="Sundays 5-8 P.M., Thursdays 8-11 P.M."
+                url="https://instagram.com/netherhour"
+                img="/images/nh_profile.jpg"
+            />
         </div>
     );
 };
