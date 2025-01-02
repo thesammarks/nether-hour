@@ -9,7 +9,7 @@ import Upcoming from "./components/Upcoming/Upcoming";
 
 export default function Home() {  
   return (
-    <main className="min-h-screen bg-black text-nh-white flex justify-center items-center">
+    <main className="min-h-screen bg-black text-neutral-200 flex justify-center items-center">
       <VideoBkgd />
       <SocialIcons />
       <NhLogo />
