@@ -8,15 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
-  theme: {
-    extend: {
-      colors: {
-        'nh-black': 'rgba(0, 0, 0, 0.2)',
-        'nh-white': 'rgb(229,227,211,1)',
-        'nh-white-light': 'rgb(229,227,211,0.4)',
-      },
-    },
-  },
+  theme: {},
   plugins: [],
 };
 export default config;
