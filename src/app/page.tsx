@@ -20,8 +20,8 @@ export default function Home() {
         <TheBand />
         <ListenNow />
 
-        <footer className="flex text-xs">
-          © 2024 Nether Family Records | Website by&nbsp;<b><a className="text-[#f40e2d]" href="https://instagram.com/thesammarks" target="_blank" rel="noopener noreferrer">sam</a></b>
+        <footer className="flex text-sm">
+          © 2024 Nether Family Records | website by&nbsp;<b><a className="text-[#f40e2d]" href="https://justcallmesam.com" target="_blank" rel="noopener noreferrer">sam</a></b>
         </footer>
       </div>
     </main>
