@@ -5,7 +5,7 @@ export function Providers({children}: { children: React.ReactNode }) {
     return (
         <NextUIProvider>
             {children}
-        <Analytics />
+            <Analytics />
         </NextUIProvider>
     )
 }
