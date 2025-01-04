@@ -16,7 +16,7 @@ export default function SpotifyLinkCard(props: SpotifyLinkCardProps) {
         <Card
             className="
                 relative min-w-[250px] max-w-[250px]
-                cursor-pointer gap-4
+                text-neutral-200 cursor-pointer gap-4
                 bg-neutral-800 lg:hover:bg-neutral-900
                 transition-all duration-300 ease-in-out
             "
@@ -29,7 +29,7 @@ export default function SpotifyLinkCard(props: SpotifyLinkCardProps) {
 
             <div className="flex flex-col items-start gap-2">
                 <div className="text-sm">Listen on Spotify</div>
-                <div className="flex flex-col items-start text-nowrap text-neutral-200">
+                <div className="flex flex-col items-start text-nowrap">
                     <span className="text-xl font-bold">{props.title}</span>
                     <span>{props.subtitle}</span>
                 </div>

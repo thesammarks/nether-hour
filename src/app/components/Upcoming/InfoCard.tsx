@@ -16,7 +16,7 @@ interface InfoCardProps {
 const InfoCard = (props: InfoCardProps) => {
     const cardClasses = `
         relative min-w-[280px] max-w-[280px]
-        cursor-pointer gap-4
+        text-neutral-200 cursor-pointer gap-4
         bg-neutral-800 lg:hover:bg-neutral-900
         transition-all duration-300 ease-in-out
     `;
@@ -31,7 +31,7 @@ const InfoCard = (props: InfoCardProps) => {
         >
             <props.icon width={16} className="absolute top-4 right-4"/>
 
-            <div className="flex flex-col items-start gap-2 text-neutral-200">
+            <div className="flex flex-col items-start gap-2">
                 <div className="text-sm">{props.header}</div>
                 <div className="flex flex-col items-start text-nowrap">
                     <span className="text-xl font-bold">{props.title}</span>

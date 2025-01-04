@@ -13,7 +13,7 @@ export default function BandMemberCard(props: BandMemberCardProps) {
     return (
         <Card
             className="
-                relative cursor-pointer
+                relative cursor-pointer text-neutral-200
                 bg-neutral-800 lg:hover:bg-neutral-900
                 transition-all duration-300 ease-in-out
             "
