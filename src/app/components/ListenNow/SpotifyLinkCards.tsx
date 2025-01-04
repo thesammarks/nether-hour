@@ -6,7 +6,7 @@ const SpotifyLinkCards = () => {
             className="
                 grid gap-4 justify-items-center
                 grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1
-                px-4 pt-4 pb-6 rounded-xl
+                py-4 px-4 rounded-xl
                 bg-gradient-to-b from-neutral-700 to-neutral-600
             "
         >

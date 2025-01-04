@@ -1,12 +1,10 @@
 import SpotifyLinkCards from "./SpotifyLinkCards";
 
-const ListenNow = () => {
+export default function ListenNow() {
     return (
-        <div className="flex flex-col w-[75%] items-center gap-5">
-            <div className="text-2xl font-bold">Listen Now</div>
+        <div id="listen-now" className="flex flex-col w-[75%] items-center gap-5 py-8">
+            <div className="text-3xl font-bold">Listen Now</div>
             <SpotifyLinkCards />
         </div>
     );
-};
-
-export default ListenNow;
+}

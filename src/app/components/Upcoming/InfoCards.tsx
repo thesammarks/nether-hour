@@ -1,18 +1,16 @@
 'use client'
 
-import { ExternalLink, Instagram } from "react-feather";
+import {ExternalLink, Instagram} from "react-feather";
 import InfoCard from "./InfoCard";
 
-const InfoCards = () => {
+export default function InfoCards() {
     return (
-        <div
-            className="
+        <div className="
             grid gap-4 justify-items-center
             grid-cols-2 max-md:grid-cols-1
             px-4 pt-4 pb-6 rounded-xl
             bg-gradient-to-b from-neutral-700 to-neutral-600
-        "
-        >
+        ">
             <InfoCard
                 header="Get Tickets"
                 title="Nether Hour"
@@ -45,12 +43,10 @@ const InfoCards = () => {
                 title="SUNDAY SERVICE + more"
                 icon={Instagram}
                 venue="Whiskey Tango Foxtrot - Austin, TX"
-                dates="Sundays 5-8 P.M., Thursdays 8-11 P.M."
+                dates="Sundays 5-8 P.M. / Thursdays 8-11 P.M."
                 url="https://instagram.com/netherhour"
                 img="/images/nh_profile.jpg"
             />
         </div>
     );
-};
-
-export default InfoCards;
+}

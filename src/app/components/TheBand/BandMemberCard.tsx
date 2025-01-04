@@ -1,6 +1,6 @@
 'use client'
 
-import { Card, CardBody, User } from "@nextui-org/react";
+import {Avatar, Card, Text} from "@mantine/core";
 
 interface BandMemberCardProps {
     name: string;
@@ -9,30 +9,28 @@ interface BandMemberCardProps {
     img: string;
 }
 
-const BandMemberCard = (props: BandMemberCardProps) => {
+export default function BandMemberCard(props: BandMemberCardProps) {
     return (
         <Card
             className="
-                px-1 rounded-xl drop-shadow-xl
+                relative cursor-pointer
                 bg-neutral-800 hover:bg-neutral-900
                 transition-all duration-300 ease-in-out
             "
-            isPressable
-            onPress={() => window.open(props.url, '_blank')}
-            isHoverable
+            shadow="sm"
+            padding="lg"
+            radius="lg"
+            onClick={() => window.open(props.url, '_blank')}
         >
-            <CardBody>
-                <User
-                    className="self-start"
-                    avatarProps={{
-                        src: props.img,
-                    }}
-                    description={props.handle}
-                    name={props.name}
-                />
-            </CardBody>
+            <div>
+                <div className="flex items-center justify-left gap-4">
+                    <div><Avatar size="lg" src={props.img} alt={props.name} /></div>
+                    <div className="flex flex-col">
+                        <Text className="text-xl font-bold">{props.name}</Text>
+                        <Text className="text-lg">{props.handle}</Text>
+                    </div>
+                </div>
+            </div>
         </Card>
     );
-  };
-  
-export default BandMemberCard;
+}
