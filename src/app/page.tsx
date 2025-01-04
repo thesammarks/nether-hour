@@ -6,7 +6,7 @@ import ListenNow from "./components/ListenNow/ListenNow";
 import TheBand from "./components/TheBand/TheBand";
 import React from "react";
 import Upcoming from "./components/Upcoming/Upcoming";
-import Nav from "@/app/components/Nav/Nav";
+import Nav from "@/app/components/Nav";
 
 export default function Home() {  
     return (

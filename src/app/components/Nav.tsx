@@ -4,7 +4,7 @@ export default function Nav() {
     return (
         <div className="
             z-50 absolute top-10 right-10 flex items-center justify-center gap-5
-            py-3 px-8 rounded-xl bg-neutral-800/90 max-md:hidden
+            py-3 px-8 rounded-xl bg-neutral-800/90 max-[880px]:hidden
             text-lg tracking-wide text-neutral-200 font-extrabold
         ">
             <a className={navLinkHoverClassName} href="#upcoming-shows">UPCOMING SHOWS</a> |

@@ -18,8 +18,8 @@ export default function SocialIcons() {
 
     return (
         <div className={`
-            z-50 absolute md:fixed flex items-center justify-center gap-4 md:flex-col
-            top-10 md:left-10 md:top-1/2 md:transform md:-translate-y-1/2
+            z-50 absolute min-[880px]:fixed flex items-center justify-center gap-4 min-[880px]:flex-col
+            top-10 min-[880px]:left-10 min-[880px]:top-1/2 min-[880px]:transform min-[880px]:-translate-y-1/2
             py-3 px-4 rounded-xl bg-neutral-800/50
         `}>
             <SocialIcon
