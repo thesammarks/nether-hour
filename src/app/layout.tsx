@@ -25,7 +25,7 @@ export default function RootLayout({
         <meta property="og:image" content="images/nh_profile.jpg" />
         <meta property="og:type" content="article"/>
 
-        <title>My Website Title</title>
+        <title>Nether Hour</title>
         <meta name="description" content="A band based in Austin, TX. Follow @netherhour on Instagram."/>
         <link rel="icon" href="/favicon.ico"/>
       </head>
