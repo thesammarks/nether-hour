@@ -28,10 +28,10 @@ export default function SpotifyLinkCard(props: SpotifyLinkCardProps) {
             <PlayCircle width={16} className="absolute top-4 right-4"/>
 
             <div className="flex flex-col items-start gap-2">
-                <div className="text-sm">Listen on Spotify</div>
+                <div className="text-xs">Listen on Spotify</div>
                 <div className="flex flex-col items-start text-nowrap">
-                    <span className="text-xl font-bold">{props.title}</span>
-                    <span>{props.subtitle}</span>
+                    <span className="text-lg font-bold">{props.title}</span>
+                    <span className="text-sm">{props.subtitle}</span>
                 </div>
             </div>
 

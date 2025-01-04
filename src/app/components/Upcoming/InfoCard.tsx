@@ -34,9 +34,9 @@ const InfoCard = (props: InfoCardProps) => {
             <div className="flex flex-col items-start gap-2">
                 <div className="text-sm">{props.header}</div>
                 <div className="flex flex-col items-start text-nowrap">
-                    <span className="text-xl font-bold">{props.title}</span>
-                    <span className="font-bold">{props.venue}</span>
-                    <span>{props.dates}</span>
+                    <span className="text-lg font-bold">{props.title}</span>
+                    <span className="text-sm font-bold">{props.venue}</span>
+                    <span className="text-sm">{props.dates}</span>
                 </div>
             </div>
 

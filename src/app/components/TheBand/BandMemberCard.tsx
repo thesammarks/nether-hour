@@ -24,10 +24,10 @@ export default function BandMemberCard(props: BandMemberCardProps) {
         >
             <div>
                 <div className="flex items-center justify-left gap-4">
-                    <div><Avatar size="lg" src={props.img} alt={props.name} /></div>
+                    <div><Avatar size="md" src={props.img} alt={props.name} /></div>
                     <div className="flex flex-col">
-                        <Text className="text-xl font-bold">{props.name}</Text>
-                        <Text className="text-lg">{props.handle}</Text>
+                        <Text className="text-lg font-bold">{props.name}</Text>
+                        <Text>{props.handle}</Text>
                     </div>
                 </div>
             </div>
