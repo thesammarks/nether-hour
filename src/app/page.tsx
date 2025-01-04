@@ -22,7 +22,7 @@ export default function Home() {
                 <TheBand />
                 <ListenNow />
 
-                <footer className="flex text-sm">
+                <footer className="flex">
                     © 2024 Nether Family Records | website by&nbsp;<b><a className="text-[#f40e2d]" href="https://justcallmesam.com" target="_blank" rel="noopener noreferrer">sam</a></b>
                 </footer>
             </div>
