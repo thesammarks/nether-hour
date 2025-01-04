@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="og:title" content="Nether Hour"/>
-        <meta property="og:description" content="Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com."/>
+        <meta property="og:description" content="A band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com."/>
         <meta property="og:image" content="images/nh_profile.jpg" />
         <meta property="og:type" content="article"/>
 
