@@ -1,5 +1,5 @@
 export default function Nav() {
-    const navLinkHoverClassName = "hover:text-xl hover:text- transition-all duration-300 ease-in-out";
+    const navLinkHoverClassName = "hover:text-xl transition-all duration-300 ease-in-out";
 
     return (
         <div className="

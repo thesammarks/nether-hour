@@ -17,7 +17,7 @@ export default function SpotifyLinkCard(props: SpotifyLinkCardProps) {
             className="
                 relative min-w-[250px] max-w-[250px]
                 cursor-pointer gap-4
-                bg-neutral-800 hover:bg-neutral-900
+                bg-neutral-800 lg:hover:bg-neutral-900
                 transition-all duration-300 ease-in-out
             "
             shadow="sm"

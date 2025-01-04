@@ -14,7 +14,7 @@ export default function BandMemberCard(props: BandMemberCardProps) {
         <Card
             className="
                 relative cursor-pointer
-                bg-neutral-800 hover:bg-neutral-900
+                bg-neutral-800 lg:hover:bg-neutral-900
                 transition-all duration-300 ease-in-out
             "
             shadow="sm"

@@ -17,7 +17,7 @@ const InfoCard = (props: InfoCardProps) => {
     const cardClasses = `
         relative min-w-[280px] max-w-[280px]
         cursor-pointer gap-4
-        bg-neutral-800 hover:bg-neutral-900
+        bg-neutral-800 lg:hover:bg-neutral-900
         transition-all duration-300 ease-in-out
     `;
 
