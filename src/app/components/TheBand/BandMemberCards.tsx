@@ -3,7 +3,7 @@ import SocialCard from "./BandMemberCard";
 const BandMemberCards = () => {
     return (
         <div className="
-            flex max-sm:flex-col justify-stretch gap-5
+            flex max-md:flex-col justify-stretch gap-5
             rounded-xl py-4 px-4
             bg-gradient-to-b from-neutral-700 to-neutral-600
         ">
