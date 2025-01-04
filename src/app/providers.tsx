@@ -1,11 +1,12 @@
-import { NextUIProvider } from '@nextui-org/react'
-import { Analytics } from "@vercel/analytics/react"
+import {Analytics} from "@vercel/analytics/react"
+import {MantineProvider} from "@mantine/core";
+import {theme} from '@/mantine-theme';
 
 export function Providers({children}: { children: React.ReactNode }) {
     return (
-        <NextUIProvider>
+        <MantineProvider defaultColorScheme="auto" theme={theme}>
             {children}
             <Analytics />
-        </NextUIProvider>
+        </MantineProvider>
     )
 }
