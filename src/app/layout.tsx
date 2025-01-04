@@ -62,41 +62,43 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <head>
-          {/* Primary Meta Tags */}
-          <title>Nether Hour</title>
-          <meta name="description" content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com." />
-          <meta name="keywords" content="musical artist, rock band, blues rock, funk, blues, rock, rock and roll, guitar, austin, atx" />
-          <meta name="author" content="Nether Hour" />
-          <link rel="canonical" href="https://www.netherhour.com/" />
+    return (
+        <html lang="en">
+            <head>
+                {/* Primary Meta Tags */}
+                <title>Nether Hour</title>
+                <meta name="description" content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com."/>
+                <meta name="keywords" content="musical artist, rock band, blues rock, funk, blues, rock, rock and roll, guitar, austin, atx"/>
+                <meta name="author" content="Nether Hour"/>
+                <meta name="robots" content="index, follow"/>
+                <meta name="googlebot" content="index, follow"/>
+                <link rel="canonical" href="https://www.netherhour.com/"/>
 
-          {/* Open Graph / Facebook */}
-          <meta property="og:title" content="Nether Hour" />
-          <meta property="og:description" content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com." />
-          <meta property="og:image" content="/images/nh_profile.jpg" />
-          <meta property="og:url" content="https://www.netherhour.com/" />
-          <meta property="og:type" content="website" />
+                {/* Open Graph / Facebook */}
+                <meta property="og:title" content="Nether Hour"/>
+                <meta property="og:description" content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com."/>
+                <meta property="og:image" content="/images/nh_profile.jpg"/>
+                <meta property="og:url" content="https://www.netherhour.com/"/>
+                <meta property="og:type" content="website"/>
 
-          {/* Twitter */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Nether Hour" />
-          <meta name="twitter:description" content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com." />
-          <meta name="twitter:image" content="/images/nh_profile.jpg" />
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:title" content="Nether Hour"/>
+                <meta name="twitter:description" content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com."/>
+                <meta name="twitter:image" content="/images/nh_profile.jpg"/>
 
-          {/* Favicon */}
-          <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body className={inter.className}>
-        <Providers>
-          {children}
-        </Providers>
-      </body>
-    </html>
-  );
+                {/* Favicon */}
+                <link rel="icon" href="/favicon.ico"/>
+            </head>
+            <body className={inter.className}>
+                <Providers>
+                    {children}
+                </Providers>
+            </body>
+        </html>
+    );
 }
