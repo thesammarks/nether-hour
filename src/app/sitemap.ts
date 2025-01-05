@@ -9,6 +9,7 @@ export default function sitemap() {
             lastModified: new Date().toISOString(),
             changeFrequency: 'daily',
             priority: 1,
+            images: ['/images/nh_profile.jpg'],
         },
     ];
 }
