@@ -10,7 +10,13 @@ export default function Nav() {
             <a className={navLinkHoverClassName} href="#upcoming-shows">UPCOMING SHOWS</a> |
             <a className={navLinkHoverClassName} href="#the-band">THE BAND</a> |
             <a className={navLinkHoverClassName} href="#listen-now">LISTEN NOW</a> |
-            <a className={navLinkHoverClassName} href="mailto:netherhour@gmail.com">CONTACT</a>
+            <a className={navLinkHoverClassName}
+               target="_blank"
+               rel="noopener noreferrer"
+               href="mailto:netherhour@gmail.com"
+            >
+                CONTACT
+            </a>
         </div>
     );
 }
