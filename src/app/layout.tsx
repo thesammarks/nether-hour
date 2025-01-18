@@ -95,7 +95,8 @@ export default function RootLayout({
                 <meta name="twitter:title" content="Nether Hour"/>
                 <meta
                     name="twitter:description"
-                    content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com."/>
+                    content="A rock band based in Austin, TX. Follow @netherhour on Instagram for the latest announcements and show information. For booking and business inquiries, email netherhour@gmail.com."
+                />
                 <meta name="twitter:image" content="/images/nh_profile.jpg"/>
 
                 {/* Icons */}
