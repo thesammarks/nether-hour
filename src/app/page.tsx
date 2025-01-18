@@ -5,7 +5,7 @@ import ScrollIcon from "./components/ScrollIcon";
 import ListenNow from "./components/ListenNow/ListenNow";
 import TheBand from "./components/TheBand/TheBand";
 import React from "react";
-import Upcoming from "./components/Upcoming/Upcoming";
+import Tour from "@/app/components/Tour/Tour";
 import Nav from "@/app/components/Nav";
 
 export default function Home() {  
@@ -18,7 +18,7 @@ export default function Home() {
             <ScrollIcon />
 
             <div className="z-20 relative bg-black w-full top-[100vh] flex flex-col items-center gap-5 pb-16">
-                <Upcoming />
+                <Tour />
                 <TheBand />
                 <ListenNow />
 

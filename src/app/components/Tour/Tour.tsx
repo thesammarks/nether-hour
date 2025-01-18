@@ -1,9 +1,9 @@
 import InfoCards from "./InfoCards";
 
-export default function Upcoming() {
+export default function Tour() {
     return (
-        <div id="upcoming-shows" className="flex flex-col w-full items-center gap-5 py-8">
-            <div className="text-3xl font-bold">Upcoming Shows</div>
+        <div id="tour" className="flex flex-col w-full items-center gap-5 py-8">
+            <div className="text-3xl font-bold">Tour Dates</div>
             <InfoCards/>
             <div className="text-lg text-center max-w-[300px] lg:max-w-[400px]">
                 Follow{' '}

@@ -7,7 +7,7 @@ export default function Nav() {
             py-3 px-6 rounded-xl bg-neutral-800/90 max-[880px]:hidden
             tracking-wide text-neutral-200 font-extrabold
         ">
-            <a className={navLinkHoverClassName} href="#upcoming-shows">UPCOMING SHOWS</a> |
+            <a className={navLinkHoverClassName} href="#tour">TOUR</a> |
             <a className={navLinkHoverClassName} href="#the-band">THE BAND</a> |
             <a className={navLinkHoverClassName} href="#listen-now">LISTEN NOW</a> |
             <a className={navLinkHoverClassName}
