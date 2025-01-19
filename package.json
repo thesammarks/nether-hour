@@ -12,6 +12,7 @@
     "@mantine/core": "^7.15.2",
     "@mantine/dates": "^7.15.2",
     "@mantine/hooks": "^7.15.2",
+    "@tabler/icons-react": "^3.28.1",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "next": "15.1.2",

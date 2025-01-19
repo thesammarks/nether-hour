@@ -1,15 +1,16 @@
 export default function Nav() {
-    const navLinkHoverClassName = "hover:scale-105 transition-all duration-300 ease-in-out";
+    const navLinkHoverClassName = "px-2 py-1 rounded-lg hover:bg-red-500 transition-all duration-300 ease-in-out";
 
     return (
         <div className="
-            z-50 absolute top-10 right-10 flex items-center justify-center gap-5
-            py-3 px-6 rounded-xl bg-neutral-800/90 max-[880px]:hidden
+            z-50 absolute top-10 flex items-center justify-center gap-5
+            py-2 px-6 rounded-lg bg-neutral-800/90 max-[880px]:hidden
             tracking-wide text-neutral-200 font-extrabold
         ">
-            <a className={navLinkHoverClassName} href="#upcoming-shows">UPCOMING SHOWS</a> |
-            <a className={navLinkHoverClassName} href="#the-band">THE BAND</a> |
-            <a className={navLinkHoverClassName} href="#listen-now">LISTEN NOW</a> |
+            <a className={navLinkHoverClassName} href="#band">THE BAND</a>
+            <a className={navLinkHoverClassName} href="#tour">TOUR</a>
+            <a className={navLinkHoverClassName} href="#watch">WATCH</a>
+            <a className={navLinkHoverClassName} href="#listen">LISTEN</a>
             <a className={navLinkHoverClassName}
                target="_blank"
                rel="noopener noreferrer"

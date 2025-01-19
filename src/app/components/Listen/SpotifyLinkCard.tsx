@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import {PlayCircle} from "react-feather"
 import {Card} from "@mantine/core";
+import {IconBrandSpotifyFilled} from "@tabler/icons-react";
 
 interface SpotifyLinkCardProps {
     title: string;
@@ -15,7 +15,7 @@ export default function SpotifyLinkCard(props: SpotifyLinkCardProps) {
     return (
         <Card
             className="
-                relative min-w-[250px] max-w-[250px]
+                relative w-full
                 text-neutral-200 cursor-pointer gap-4
                 bg-neutral-800 lg:hover:bg-neutral-900
                 transition-all duration-300 ease-in-out
@@ -25,22 +25,20 @@ export default function SpotifyLinkCard(props: SpotifyLinkCardProps) {
             radius="lg"
             onClick={() => window.open(props.url, '_blank')}
         >
-            <PlayCircle width={16} className="absolute top-4 right-4"/>
-
-            <div className="flex flex-col items-start gap-2">
-                <div className="text-xs">Listen on Spotify</div>
+            <div className="flex items-start justify-between">
                 <div className="flex flex-col items-start text-nowrap">
                     <span className="text-lg font-bold">{props.title}</span>
                     <span className="text-sm">{props.subtitle}</span>
                 </div>
+                <IconBrandSpotifyFilled width={28}/>
             </div>
 
             <div>
                 <Image
                     src={props.img}
-                    className="object-cover rounded-xl"
-                    width={250}
-                    height={250}
+                    className="object-cover rounded-xl w-full"
+                    width={1}
+                    height={1}
                     alt={props.title}
                 />
             </div>

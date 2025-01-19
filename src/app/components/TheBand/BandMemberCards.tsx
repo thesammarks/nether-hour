@@ -3,8 +3,9 @@ import SocialCard from "./BandMemberCard";
 const BandMemberCards = () => {
     return (
         <div className="
-            flex max-md:flex-col justify-stretch gap-5
-            rounded-xl py-4 px-4
+            flex max-xl:flex-col
+            gap-4 justify-stretch
+            px-4 py-4 rounded-xl
             bg-gradient-to-b from-neutral-700 to-neutral-600
         ">
             <SocialCard
