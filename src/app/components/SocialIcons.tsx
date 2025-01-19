@@ -7,7 +7,7 @@ export default function SocialIcons() {
     const iconProps = {
         className: `
             rounded-xl bg-neutral-300 text-neutral-800 
-            lg:hover:bg-neutral-800 lg:hover:text-neutral-300 
+            lg:hover:bg-red-500 lg:hover:text-neutral-300 
             transition-all duration-300 ease-in-out
         `,
         target: "_blank",
