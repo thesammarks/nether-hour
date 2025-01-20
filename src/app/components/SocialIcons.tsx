@@ -99,7 +99,7 @@ export default function SocialIcons() {
             {/* Navigation Links */}
             <div
                 className={`
-                    w-full pt-2 pb-6 
+                    w-full pt-2 pb-6 absolute top-[98px]
                     flex justify-center items-start gap-10
                     bg-neutral-900/90 font-bold
                     transition-transform duration-300 ease-in-out
