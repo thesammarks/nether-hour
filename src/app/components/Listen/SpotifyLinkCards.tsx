@@ -1,13 +1,9 @@
 import SpotifyLinkCard from "./SpotifyLinkCard";
+import styles from "./SpotifyLinkCards.module.scss";
 
-const SpotifyLinkCards = () => {
+export default function SpotifyLinkCards() {
     return (
-        <div className="
-            w-full grid grid-cols-3 max-2xl:grid-cols-2 max-[1000px]:grid-cols-1
-            gap-4 justify-items-center
-            py-4 px-4 rounded-xl
-            bg-gradient-to-b from-neutral-700 to-neutral-600
-        ">
+        <div className={styles.container}>
             <SpotifyLinkCard
                 title="Look My Way"
                 subtitle="2024 • Single"
@@ -46,6 +42,4 @@ const SpotifyLinkCards = () => {
             />
         </div>
     );
-};
-
-export default SpotifyLinkCards;
+}

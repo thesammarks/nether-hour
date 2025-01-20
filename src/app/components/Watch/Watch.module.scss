@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60%; // w-[60%]
+    padding-top: 1.25rem; // pt-5
+    align-items: center;
+    gap: 1.25rem; // gap-5
+
+    @media (max-width: 768px) {
+        width: 80%; // max-md:w-[80%]
+    }
+}
+
+.title {
+    font-size: 1.875rem; // text-3xl
+    font-weight: bold;
+}

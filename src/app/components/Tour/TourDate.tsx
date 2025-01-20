@@ -1,6 +1,7 @@
-'use client'
+'use client';
 
 import {Card} from "@mantine/core";
+import styles from "./TourDate.module.scss";
 
 interface TourDateProps {
     date: string;
@@ -10,34 +11,23 @@ interface TourDateProps {
 }
 
 export default function TourDate(props: TourDateProps) {
-    const cardClassName = `
-        relative w-full
-        text-neutral-200 cursor-pointer gap-4
-        bg-neutral-800 lg:hover:bg-neutral-900
-        transition-all duration-300 ease-in-out
-    `;
-
     return (
         <Card
-            className={cardClassName}
+            className={styles.card}
             shadow="sm"
             padding="lg"
             radius="lg"
             onClick={() => window.open(props.url, '_blank')}
         >
-            <div className="flex gap-4 items-center text-nowrap">
-                <div
-                    className="
-                        flex flex-1 justify-between items-center
-                        max-[790px]:flex-col max-[790px]:items-start
-                    ">
-                    <span className="text-xl font-bold">{props.date}</span>
-                    <div className="flex flex-col items-end max-[790px]:items-start">
-                        <span className="text-lg font-bold max-[790px]:text-md">{props.city}</span>
-                        <span className="text-sm">{props.venue}</span>
+            <div className={styles.container}>
+                <div className={styles.details}>
+                    <span className={styles.date}>{props.date}</span>
+                    <div className={styles.cityVenue}>
+                        <span className={styles.city}>{props.city}</span>
+                        <span className={styles.venue}>{props.venue}</span>
                     </div>
                 </div>
-                <div className="font-bold px-4 py-2 rounded-lg bg-red-500">Tickets</div>
+                <div className={styles.tickets}>Tickets</div>
             </div>
         </Card>
     );

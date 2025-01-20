@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; // w-full
+    gap: 1.5rem; // gap-6
+    justify-items: center;
+    padding: 1.5rem; // px-6 py-6
+    border-radius: 0.75rem; // rounded-xl
+    background-color: #111827; // bg-neutral-900
+}

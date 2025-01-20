@@ -1,0 +1,20 @@
+.scrollIcon {
+    display: flex;
+    position: fixed;
+    z-index: 20;
+    bottom: 2.5rem; // bottom-10
+    transition: opacity 0.5s ease-in-out; // transition-opacity duration-500
+
+    &.hidden {
+        opacity: 0;
+    }
+
+    &:not(.hidden) {
+        opacity: 1;
+    }
+}
+
+.icon {
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5)); // drop-shadow
+    fill: rgba(229, 227, 211, 0.8); // fill-neutral-300/80
+}

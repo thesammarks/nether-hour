@@ -1,0 +1,28 @@
+.card {
+    position: relative;
+    cursor: pointer;
+    color: #e5e7eb; /* text-neutral-200 */
+    background-color: #262626; /* bg-neutral-800 */
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    background-color: #3f3f3f; /* lg:hover:bg-neutral-900 */
+}
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem; /* gap-4 */
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: bold;
+}

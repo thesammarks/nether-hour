@@ -8,29 +8,30 @@ import React from "react";
 import Tour from "@/app/components/Tour/Tour";
 import Nav from "@/app/components/Nav";
 import Watch from "@/app/components/Watch/Watch";
+import styles from "./Home.module.scss";
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-black text-neutral-200 flex justify-center items-center">
+        <main className={styles.main}>
             <VideoBkgd />
             <Nav />
             <SocialIcons />
             <NhLogo />
             <ScrollIcon />
 
-            <div className="z-20 relative bg-black w-full top-[100vh] flex flex-col items-center gap-5 pb-16">
+            <div className={styles.content}>
                 <About />
                 <Tour />
                 <Watch />
                 <Listen />
 
-                <footer className="pt-10 max-w-[80%] text-center">
+                <footer className={styles.footer}>
                     <span>© 2024 Nether Family Records | </span>
                     <span>
                         website by&nbsp;
                         <b>
                             <a
-                                className="text-[#f40e2d]"
+                                className={styles.footerLink}
                                 href="https://justcallmesam.com"
                                 target="_blank"
                                 rel="noopener noreferrer"

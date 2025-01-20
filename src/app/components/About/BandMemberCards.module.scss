@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1rem; /* gap-4 */
+    justify-content: stretch;
+    padding: 1rem; /* p-4 */
+    border-radius: 0.75rem; /* rounded-xl */
+    background: linear-gradient(to bottom, #3f3f3f, #525252); /* bg-gradient-to-b from-neutral-700 to-neutral-600 */
+}
+
+@media (max-width: 1280px) {
+    .container {
+        flex-direction: column; /* max-xl:flex-col */
+    }
+}

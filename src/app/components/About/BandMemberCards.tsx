@@ -1,13 +1,9 @@
 import SocialCard from "./BandMemberCard";
+import styles from "./BandMemberCards.module.scss";
 
-const BandMemberCards = () => {
+export default function BandMemberCards() {
     return (
-        <div className="
-            flex max-xl:flex-col
-            gap-4 justify-stretch
-            px-4 py-4 rounded-xl
-            bg-gradient-to-b from-neutral-700 to-neutral-600
-        ">
+        <div className={styles.container}>
             <SocialCard
                 name="Bercy"
                 handle="@_bercy"
@@ -28,6 +24,4 @@ const BandMemberCards = () => {
             />
         </div>
     );
-};
-
-export default BandMemberCards;
+}

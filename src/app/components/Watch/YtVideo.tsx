@@ -1,7 +1,8 @@
-'use client'
+'use client';
 
 import React, {useEffect, useState} from "react";
 import YouTube from "react-youtube";
+import styles from "./YtVideo.module.scss";
 
 interface YtVideoProps {
     ytId: string;
@@ -12,7 +13,7 @@ export default function YtVideo(props: YtVideoProps) {
 
     useEffect(() => {
         const updatePlayerSize = () => {
-            const containerWidth = document.querySelector(".youtube-container")?.clientWidth || 640;
+            const containerWidth = document.querySelector(`.${styles.youtubeContainer}`)?.clientWidth || 640;
             const calculatedHeight = (containerWidth / 16) * 9; // Maintain 16:9 aspect ratio
             setPlayerSize({
                 width: containerWidth,
@@ -20,10 +21,8 @@ export default function YtVideo(props: YtVideoProps) {
             });
         };
 
-        // Initial calculation
         updatePlayerSize();
 
-        // Update on window resize
         window.addEventListener("resize", updatePlayerSize);
 
         return () => {
@@ -32,7 +31,7 @@ export default function YtVideo(props: YtVideoProps) {
     }, []);
 
     return (
-        <div className="youtube-container w-full rounded-xl overflow-hidden">
+        <div className={styles.youtubeContainer}>
             <YouTube
                 videoId={props.ytId}
                 opts={{

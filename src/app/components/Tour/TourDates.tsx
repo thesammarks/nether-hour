@@ -1,15 +1,11 @@
-'use client'
+'use client';
 
 import TourDate from "./TourDate";
+import styles from "./TourDates.module.scss";
 
 export default function TourDates() {
     return (
-        <div className="
-            flex flex-col w-full
-            gap-4 justify-items-center
-            px-4 py-4 rounded-xl
-            bg-gradient-to-b from-neutral-700 to-neutral-600
-        ">
+        <div className={styles.container}>
             <TourDate
                 date="Fri, Jan 31"
                 city="Boulder, CO"

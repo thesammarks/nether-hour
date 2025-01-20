@@ -1,0 +1,106 @@
+.container {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #d1d5db; // Tailwind's text-neutral-300
+}
+
+.socialBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem; // Tailwind's gap-5
+    padding: 1.5rem 0; // Tailwind's py-6
+    background-color: rgba(17, 24, 39, 0.9); // Tailwind's bg-neutral-900/90
+
+    @media (min-width: 880px) {
+        position: fixed;
+        flex-direction: column;
+        left: -20px;
+        padding: 1rem 0.875rem; // Tailwind's px-4 py-4 pl-[35px]
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 0.75rem; // Tailwind's rounded-xl
+    }
+}
+
+.burger {
+    color: #ef4444; // Tailwind's text-red-500
+    display: block;
+
+    @media (min-width: 880px) {
+        display: none;
+    }
+}
+
+.icon {
+    border-radius: 0.75rem; // Tailwind's rounded-xl
+    background-color: #d1d5db; // Tailwind's bg-neutral-300
+    color: #1f2937; // Tailwind's text-neutral-800
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #ef4444; // Tailwind's lg:hover:bg-red-500
+        color: #d1d5db; // Tailwind's lg:hover:text-neutral-300
+    }
+}
+
+.hiddenSm {
+    @media (max-width: 640px) {
+        display: none; // Tailwind's max-sm:hidden
+    }
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2.5rem; // Tailwind's gap-10
+    padding: 0.5rem 0 1.5rem; // Tailwind's pt-2 pb-6
+    background-color: rgba(17, 24, 39, 0.9); // Tailwind's bg-neutral-900/90
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+
+    &.navOpen {
+        transform: translateY(0); // Tailwind's translate-y-0
+    }
+
+    &.navClosed {
+        transform: translateY(-400px); // Tailwind's -translate-y-[400px]
+    }
+
+    @media (min-width: 880px) {
+        display: none;
+    }
+}
+
+.navSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; // Tailwind's gap-6
+    border-right: 2px solid; // Tailwind's border-r-2
+    padding-right: 1rem; // Tailwind's pr-4
+}
+
+.navLink {
+    width: 100%;
+    text-align: right;
+}
+
+.iconGroups {
+    display: flex;
+    gap: 1rem; // Tailwind's gap-4
+}
+
+.iconGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; // Tailwind's gap-4
+}

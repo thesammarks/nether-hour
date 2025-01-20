@@ -1,0 +1,22 @@
+.link {
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 175px; // w-[175px]
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5)); // drop-shadow
+    fill: rgba(209, 213, 219, 0.8); // fill-neutral-300/80
+    transition: all 0.3s ease-in-out; // transition-all duration-300 ease-in-out
+
+    &:hover {
+        fill: rgba(239, 68, 68, 0.9); // lg:hover:fill-red-500/90
+    }
+
+    @media (max-width: 640px) {
+        width: 125px; // max-sm:w-[125px]
+    }
+}

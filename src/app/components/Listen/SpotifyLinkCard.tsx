@@ -1,8 +1,9 @@
-'use client'
+'use client';
 
 import Image from "next/image";
 import {Card} from "@mantine/core";
 import {IconBrandSpotifyFilled} from "@tabler/icons-react";
+import styles from "./SpotifyLinkCard.module.scss";
 
 interface SpotifyLinkCardProps {
     title: string;
@@ -14,29 +15,24 @@ interface SpotifyLinkCardProps {
 export default function SpotifyLinkCard(props: SpotifyLinkCardProps) {
     return (
         <Card
-            className="
-                relative w-full
-                text-neutral-200 cursor-pointer gap-4
-                bg-neutral-800 lg:hover:bg-neutral-900
-                transition-all duration-300 ease-in-out
-            "
+            className={styles.card}
             shadow="sm"
             padding="lg"
             radius="lg"
             onClick={() => window.open(props.url, '_blank')}
         >
-            <div className="flex items-start justify-between">
-                <div className="flex flex-col items-start text-nowrap">
-                    <span className="text-lg font-bold">{props.title}</span>
-                    <span className="text-sm">{props.subtitle}</span>
+            <div className={styles.header}>
+                <div className={styles.text}>
+                    <span className={styles.title}>{props.title}</span>
+                    <span className={styles.subtitle}>{props.subtitle}</span>
                 </div>
-                <IconBrandSpotifyFilled width={28}/>
+                <IconBrandSpotifyFilled width={28} />
             </div>
 
-            <div>
+            <div className={styles.imageWrapper}>
                 <Image
                     src={props.img}
-                    className="object-cover rounded-xl w-full"
+                    className={styles.image}
                     width={1}
                     height={1}
                     alt={props.title}
