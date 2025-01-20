@@ -4,14 +4,7 @@ import React, {useEffect, useRef} from 'react'
 import {SocialIcon} from 'react-social-icons'
 import {Burger} from "@mantine/core";
 import {useDisclosure} from "@mantine/hooks";
-import {
-    IconBrandAppleFilled,
-    IconBrandFacebook,
-    IconBrandInstagram,
-    IconBrandSpotifyFilled,
-    IconBrandX,
-    IconBrandYoutubeFilled
-} from "@tabler/icons-react";
+import {IconBrandFacebook, IconBrandX} from "@tabler/icons-react";
 
 export default function SocialIcons() {
     const [opened, { toggle, close }] = useDisclosure();
@@ -112,35 +105,16 @@ export default function SocialIcons() {
                     <a className="w-full text-right" href="#tour">TOUR</a>
                     <a className="w-full text-right" href="#watch">WATCH</a>
                     <a className="w-full text-right" href="#listen">LISTEN</a>
-                    <a className="w-full text-right" href="mailto:netherhour@gmail.com" target="_blank"
-                       rel="noopener noreferrer">CONTACT
-                    </a>
+                    <a className="w-full text-right" href="mailto:netherhour@gmail.com" target="_blank" rel="noopener noreferrer">CONTACT</a>
                 </div>
 
                 <div className="flex items-center justify-center gap-4">
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <a href="https://open.spotify.com/artist/7xFkiQ9B6WA6932TniPRGr" target="_blank"
-                           rel="noopener noreferrer">
-                            <IconBrandSpotifyFilled width={28} height={28}/>
-                        </a>
-                        <a href="https://www.instagram.com/netherhour" target="_blank" rel="noopener noreferrer">
-                            <IconBrandInstagram width={28} height={28}/>
-                        </a>
-                        <a href="https://x.com/NetherHour" target="_blank" rel="noopener noreferrer">
-                            <IconBrandX width={28} height={28}/>
-                        </a>
-                    </div>
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <a href="https://music.apple.com/us/artist/nether-hour/1544082556" target="_blank" rel="noopener noreferrer">
-                            <IconBrandAppleFilled width={28} height={28}/>
-                        </a>
-                        <a href="https://www.youtube.com/@netherhour" target="_blank" rel="noopener noreferrer">
-                            <IconBrandYoutubeFilled width={28} height={28}/>
-                        </a>
-                        <a href="https://x.com/NetherHour" target="_blank" rel="noopener noreferrer">
-                            <IconBrandFacebook width={28} height={28}/>
-                        </a>
-                    </div>
+                    <a href="https://x.com/NetherHour" target="_blank" rel="noopener noreferrer">
+                        <IconBrandX width={28} height={28}/>
+                    </a>
+                    <a href="https://www.facebook.com/thenetherhour" target="_blank" rel="noopener noreferrer">
+                        <IconBrandFacebook width={28} height={28}/>
+                    </a>
                 </div>
             </div>
         </div>
