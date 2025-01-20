@@ -5,7 +5,7 @@ import {SpeedInsights} from "@vercel/speed-insights/next"
 
 export function Providers({children}: { children: React.ReactNode }) {
     return (
-        <MantineProvider defaultColorScheme="auto" theme={theme}>
+        <MantineProvider defaultColorScheme="dark" forceColorScheme="dark" theme={theme}>
             {children}
             <Analytics />
             <SpeedInsights />

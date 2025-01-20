@@ -3,7 +3,7 @@ import NhLogo from "@/app/components/NhLogo";
 import VideoBkgd from "@/app/components/VideoBkgd";
 import ScrollIcon from "@/app/components/ScrollIcon";
 import Listen from "@/app/components/Listen/Listen";
-import TheBand from "@/app/components/TheBand/TheBand";
+import About from "@/app/components/About/About";
 import React from "react";
 import Tour from "@/app/components/Tour/Tour";
 import Nav from "@/app/components/Nav";
@@ -19,7 +19,7 @@ export default function Home() {
             <ScrollIcon />
 
             <div className="z-20 relative bg-black w-full top-[100vh] flex flex-col items-center gap-5 pb-16">
-                <TheBand />
+                <About />
                 <Tour />
                 <Watch />
                 <Listen />
