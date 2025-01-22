@@ -15,7 +15,6 @@ const nextConfig = {
         nh_link_facebook: "https://www.facebook.com/thenetherhour",
         author_link: "https://www.justcallmesam.com/"
     },
-    transpilePackages: ["react-youtube"],
 };
 
 export default nextConfig;
