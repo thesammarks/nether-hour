@@ -5,7 +5,8 @@ export default function VideoBkgd() {
         <div>
             <div className="
                 absolute z-10 top-0 left-0 object-cover h-full w-full
-                bg-gradient-to-b from-black/10 to-black"></div>
+                bg-gradient-to-b from-black/10 to-black"
+            ></div>
             <video
                 className="absolute top-0 left-0 object-cover h-full w-full"
                 autoPlay

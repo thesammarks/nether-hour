@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import {Providers} from "./providers";
 import '@mantine/core/styles.layer.css';
 import React from "react";
