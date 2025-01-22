@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import YouTube from "react-youtube";
 
 interface YtVideoProps {
@@ -9,15 +9,21 @@ interface YtVideoProps {
 
 export default function YtVideo(props: YtVideoProps) {
     const [playerSize, setPlayerSize] = useState({ width: 640, height: 360 });
+    const [isMounted, setIsMounted] = useState(false);
+    const containerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
+        setIsMounted(true);
+
         const updatePlayerSize = () => {
-            const containerWidth = document.querySelector(".youtube-container")?.clientWidth || 640;
-            const calculatedHeight = (containerWidth / 16) * 9; // Maintain 16:9 aspect ratio
-            setPlayerSize({
-                width: containerWidth,
-                height: calculatedHeight,
-            });
+            if (containerRef.current) {
+                const containerWidth = containerRef.current.clientWidth || 640;
+                const calculatedHeight = (containerWidth / 16) * 9; // Maintain 16:9 aspect ratio
+                setPlayerSize({
+                    width: containerWidth,
+                    height: calculatedHeight,
+                });
+            }
         };
 
         // Initial calculation
@@ -32,17 +38,24 @@ export default function YtVideo(props: YtVideoProps) {
     }, []);
 
     return (
-        <div className="youtube-container w-full rounded-xl overflow-hidden">
-            <YouTube
-                videoId={props.ytId}
-                opts={{
-                    width: playerSize.width.toString(),
-                    height: playerSize.height.toString(),
-                    playerVars: {
-                        autoplay: 0,
-                    },
-                }}
-            />
+        <div
+            ref={containerRef}
+            className="youtube-container w-full rounded-xl overflow-hidden"
+        >
+            {isMounted ? (
+                <YouTube
+                    videoId={props.ytId}
+                    opts={{
+                        width: playerSize.width.toString(),
+                        height: playerSize.height.toString(),
+                        playerVars: {
+                            autoplay: 0,
+                        },
+                    }}
+                />
+            ) : (
+                <p>Loading insanely cool content...</p>
+            )}
         </div>
     );
 }
