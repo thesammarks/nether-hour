@@ -8,16 +8,17 @@ import Tour from "@/app/components/Tour/Tour";
 import Footer from "@/app/components/Footer";
 import Nav from "@/app/components/Nav/Nav";
 import Watch from "@/app/components/Watch/Watch";
+import styles from "./Home.module.scss";
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-black text-neutral-200 flex justify-center items-center">
+        <main className={styles.container}>
             <VideoBkgd />
             <Nav />
             <NhLogo />
             <ScrollIcon />
 
-            <div className="z-20 relative bg-black w-full top-[100vh] flex flex-col items-center gap-5 pb-16">
+            <div className={styles.content}>
                 <About />
                 <Tour />
                 <Watch />
