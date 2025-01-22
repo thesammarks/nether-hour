@@ -15,7 +15,7 @@ import {
 import Link from "next/link";
 import LinkNewTab from "@/app/components/LinkNewTab";
 
-export default function ResponsiveSocialNav() {
+export default function ResponsiveNavMenu() {
     const [opened, { toggle, close }] = useDisclosure();
     const navMenuRef = useRef<HTMLDivElement | null>(null);
 
@@ -108,17 +108,10 @@ export default function ResponsiveSocialNav() {
                 className={` 
                     flex items-center justify-center gap-5
                     py-6 bg-neutral-900/90
-                    max-[880px]:w-full
-                    min-[880px]:fixed
-                    min-[880px]:flex-col
-                    min-[880px]:left-[-20px]
-                    min-[880px]:px-4
-                    min-[880px]:py-4
-                    min-[880px]:pl-[35px]
-                    min-[880px]:top-1/2
-                    min-[880px]:transform
-                    min-[880px]:-translate-y-1/2
-                    min-[880px]:rounded-xl
+                    max-[880px]:w-full min-[880px]:fixed min-[880px]:left-[-20px]
+                    min-[880px]:px-4 min-[880px]:py-4 min-[880px]:pl-[35px]
+                    min-[880px]:top-1/2 min-[880px]:transform min-[880px]:-translate-y-1/2
+                    min-[880px]:flex-col min-[880px]:rounded-xl
             `}>
                 <Burger
                     opened={opened}
