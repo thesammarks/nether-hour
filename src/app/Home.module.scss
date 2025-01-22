@@ -1,7 +1,7 @@
 .container {
     min-height: 100vh;
     background-color: black;
-    color: #d1d5db;
+    color: var(--neutral-300);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,7 @@
 
 .content {
     position: relative;
+    z-index: 10;
     background-color: black;
     width: 100%;
     top: 100vh;

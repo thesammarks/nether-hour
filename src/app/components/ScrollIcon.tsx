@@ -1,26 +1,27 @@
-'use client'
+'use client';
 
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react';
+import styles from './ScrollIcon.module.scss';
 
 export default function ScrollIcon() {
     const [isFading, setIsFading] = useState(false);
 
     useEffect(() => {
-      const handleScroll = () => {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        setIsFading(scrollTop > 0);
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
+        const handleScroll = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            setIsFading(scrollTop > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-  
+
     return (
         <div
-        className={`flex fixed z-20 bottom-10 transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
-        style={{ pointerEvents: isFading ? 'none' : 'auto' }}
+            className={`${styles.container} ${isFading ? styles.hidden : styles.visible}`}
+            style={{ pointerEvents: isFading ? 'none' : 'auto' }}
         >
-            <svg className="drop-shadow-[0px_0px_4px_rgba(255,255,255,0.5)]" width="20" fill="rgba(229,227,211,0.8)" viewBox="0 0 10.5366 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className={styles.icon} stroke="none" width="20" fill="rgba(229,227,211,0.8)" viewBox="0 0 10.5366 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.2 20.6634L5.26829 22.5951L3.33659 20.6634C3.10244 20.4293 2.75122 20.4293 2.51707 20.6634C2.28293 20.8976 2.28293 21.2488 2.51707 21.4829L4.85854 23.8244C4.97561 23.9415 5.12195 24 5.26829 24C5.41463 24 5.56098 23.9415 5.67805 23.8244L8.01951 21.4829C8.25366 21.2488 8.25366 20.8976 8.01951 20.6634C7.78537 20.4293 7.43415 20.4293 7.2 20.6634Z"/>
                 <path d="M8.01951 17.4439C7.78537 17.2098 7.43415 17.2098 7.2 17.4439L5.26829 19.3756L3.33659 17.4439C3.10244 17.2098 2.75122 17.2098 2.51707 17.4439C2.28293 17.678 2.28293 18.0293 2.51707 18.2634L4.85854 20.6049C4.97561 20.722 5.12195 20.7805 5.26829 20.7805C5.41463 20.7805 5.56098 20.722 5.67805 20.6049L8.01951 18.2634C8.25366 18.0293 8.25366 17.678 8.01951 17.4439Z"/>
                 <path d="M10.5366 10.5366L10.5366 5.26829C10.5366 2.37073 8.16585 0 5.26829 0C2.37073 0 0 2.37073 0 5.26829L0 10.5366C0 13.4341 2.37073 15.8049 5.26829 15.8049C8.16585 15.8049 10.5366 13.4341 10.5366 10.5366ZM5.26829 14.6341C3.01463 14.6341 1.17073 12.7902 1.17073 10.5366L1.17073 5.26829C1.17073 3.01463 3.01463 1.17073 5.26829 1.17073C7.52195 1.17073 9.36585 3.01463 9.36585 5.26829L9.36585 10.5366C9.36585 12.7902 7.52195 14.6341 5.26829 14.6341Z"/>
