@@ -1,0 +1,11 @@
+.container {
+    padding: 20px 0;
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.authorLink {
+    color: var(--red-500);
+}
