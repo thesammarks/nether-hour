@@ -21,7 +21,7 @@ export default function Press() {
                         rel="noopener noreferrer"
                         href={`mailto:${process.env.nh_email}`}
                     >
-                        ${process.env.nh_email}
+                        {process.env.nh_email}
                     </Link>
                 </div>
                 <div>
