@@ -8,10 +8,10 @@ export default function YtVideos() {
             px-6 py-6 rounded-xl
             bg-neutral-900
         ">
+            <YtVideo ytId="YZF7TIXTmeI" />
+            <YtVideo ytId="sWl4-H7PHTM" />
+            <YtVideo ytId="EseF4EnVJ2U" />
             <YtVideo ytId="RP2C4aKWtXc" />
-            <YtVideo ytId="f4IX070ZQf8" />
-            <YtVideo ytId="C07McuC-kEc" />
-            <YtVideo ytId="uy0YU72qSkg" />
         </div>
     );
 }
