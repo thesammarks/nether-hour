@@ -1,19 +1,15 @@
 import React from "react";
 import Image from 'next/image'
+import styles from './About.module.scss';
 
 export default function About() {
     return (
-        <div
-            id="about"
-            className="
-                z-20 w-[80%] max-sm:w-[90%] p-5
-                flex flex-col gap-10
-                bg-neutral-900/95 rounded-xl
-            ">
-            <div className="text-3xl font-bold self-center tracking-wider">ABOUT</div>
+        <div id="about" className={styles.container}>
 
-            <div className="flex flex-col gap-4">
-                <div className="text-2xl font-bold">Nether Hour: A Sonic Revival</div>
+            <div className={styles.title}>ABOUT</div>
+
+            <div className={styles.section}>
+                <div className={styles.sectionTitle}>Nether Hour: A Sonic Revival</div>
                 <p>
                     <em>“We don’t play country music, but we’re good ole boys from the country.”</em>
                 </p>
@@ -27,15 +23,15 @@ export default function About() {
                     into your gut. Nether Hour is a relentless sonic melting pot, fusing the swampy grooves of Louisiana
                     with Texas-sized doses of funk, blues, soul, and rock ‘n’ roll.
                 </p>
-                <div className="flex gap-4">
+                <div className={styles.imageRow}>
                     <Image
-                        className="flex-1 object-cover"
+                       className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img01.jpeg"}
                         alt="About Image 01"
                     />
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img02.jpeg"}
                         alt="About Image 02"
@@ -43,8 +39,8 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-                <div className="text-2xl font-bold">The Backstory</div>
+            <div className={styles.section}>
+                <div className={styles.sectionTitle}>The Backstory</div>
                 <p>
                     Before they evolved into the three-headed beast known as Nether Hour, Bercy and Bishop were stirring
                     up trouble in a band called Swamp Brew, while Bobby was raising hell in his own outfit. It was only
@@ -53,21 +49,21 @@ export default function About() {
                     SXSW, Bobby, Bishop, and Bercy have been carving out a niche in Austin’s music scene, including a
                     stint as the <em>Kill Tony</em> after-party band for over a year.
                 </p>
-                <div className="flex gap-4">
+                <div className={styles.imageRow}>
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img03.png"}
                         alt="About Image 03"
                     />
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img04.png"}
                         alt="About Image 04"
                     />
                     <Image
-                        className="flex-1 object-cover max-lg:hidden"
+                        className={`${styles.image} ${styles.hiddenLg}`}
                         width={1} height={1}
                         src={"/images/about/about_img05.jpeg"}
                         alt="About Image 05"
@@ -75,8 +71,8 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-                <div className="text-2xl font-bold">New Album: MOONSHINE</div>
+            <div className={styles.section}>
+                <div className={styles.sectionTitle}>New Album: MOONSHINE</div>
                 <p>
                     On <strong>Friday, March 14, 2025</strong>, brace yourself for the band’s next eruption
                     titled <strong>MOONSHINE</strong> — an eight-track album that promises to be the raucous,
@@ -93,21 +89,21 @@ export default function About() {
                     are the real deal, blending Southern grit with the ability to shift from bluesy riffs to swampy
                     grooves in a heartbeat.
                 </p>
-                <div className="flex gap-4">
+                <div className={styles.imageRow}>
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img06.jpeg"}
                         alt="About Image 06"
                     />
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img07.jpeg"}
                         alt="About Image 07"
                     />
                     <Image
-                        className="flex-1 object-cover max-lg:hidden"
+                        className={`${styles.image} ${styles.hiddenLg}`}
                         width={1} height={1}
                         src={"/images/about/about_img08.jpeg"}
                         alt="About Image 08"
@@ -115,8 +111,8 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-                <div className="text-2xl font-bold">Influences and Sound</div>
+            <div className={styles.section}>
+                <div className={styles.sectionTitle}>Influences and Sound</div>
                 <p>
                     Imagine a hell-bent voyage into the dizzying depths of musical madness, blending Little Dragon’s
                     anarchic funk, the unfiltered ferocity of the Rolling Stones, and D’Angelo’s sultry haze. Add Wayne
@@ -124,15 +120,15 @@ export default function About() {
                     harmonies of the Eagles and Crosby, Stills & Nash. Sprinkle in AC/DC’s thunderous riffs, Thin
                     Lizzy’s swagger, and Jungle’s groove-driven mayhem, and you’ve got Nether Hour.
                 </p>
-                <div className="flex gap-4">
+                <div className={styles.imageRow}>
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img09.jpeg"}
                         alt="About Image 09"
                     />
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img10.jpeg"}
                         alt="About Image 10"
@@ -140,8 +136,8 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-4">
-                <div className="text-2xl font-bold">Future Plans</div>
+            <div className={styles.section}>
+                <div className={styles.sectionTitle}>Future Plans</div>
                 <p>
                     As the band begins to garner some well-deserved recognition, they’re pushing their tenacious sound
                     beyond Austin’s borders and taking it across state lines. For the remainder of 2024 and throughout
@@ -152,21 +148,21 @@ export default function About() {
                     <strong>MOONSHINE</strong> is slated for release on <strong>Friday, March 14, 2025</strong>. Don’t
                     miss the opportunity to dive headfirst into the raw energy and sonic brilliance of Nether Hour!
                 </p>
-                <div className="flex gap-4">
+                <div className={styles.imageRow}>
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img11.jpeg"}
                         alt="About Image 11"
                     />
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img12.jpeg"}
                         alt="About Image 12"
                     />
                     <Image
-                        className="flex-1 object-cover"
+                        className={styles.image}
                         width={1} height={1}
                         src={"/images/about/about_img13.jpeg"}
                         alt="About Image 13"
