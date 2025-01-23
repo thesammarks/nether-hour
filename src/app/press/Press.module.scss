@@ -1,0 +1,85 @@
+.container {
+    z-index: 20;
+    width: 80%;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--neutral-900);
+    border-radius: 0.75rem;
+
+    @media (max-width: 640px) {
+        width: 90%;
+    }
+}
+
+.title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    align-self: center;
+    letter-spacing: 0.05em;
+}
+
+.inquiry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    @media (max-width: 640px) {
+        gap: 1rem;
+    }
+}
+
+.inquiryItem {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5em;
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--red-500);
+}
+
+.pressItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pressTitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.pressDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.pressOutlet {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: var(--red-500);
+}
+
+.quote {
+    padding: 1rem;
+    border-left: 4px solid var(--neutral-300);
+    background-color: var(--neutral-800);
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
