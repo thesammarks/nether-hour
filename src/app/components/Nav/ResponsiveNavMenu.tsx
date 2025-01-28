@@ -67,13 +67,12 @@ export default function ResponsiveNavMenu() {
                     className={`absolute left-10`}
                 />
                 <div className="flex flex-col items-center justify-center gap-6 border-r pr-5">
-                    <Link className="w-full text-right" href="/">HOME</Link>
+                    <Link className="w-full text-right" href="/" onClick={close}>HOME</Link>
                     <Link className="w-full text-right" href="/tour">TOUR</Link>
                     <Link className="w-full text-right" href="/#watch" onClick={close}>WATCH</Link>
                     <Link className="w-full text-right" href="/#listen" onClick={close}>LISTEN</Link>
                     <LinkNewTab className="w-full text-right" url="https://netherhour.shop/">SHOP</LinkNewTab>
                 </div>
-
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col gap-6">
                         <Link className="w-full" href="/about">ABOUT</Link>
