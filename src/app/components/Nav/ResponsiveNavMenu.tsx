@@ -35,9 +35,11 @@ export default function ResponsiveNavMenu() {
 
     const iconProps = {
         className: `
-            rounded-xl bg-neutral-300 text-neutral-800 
-            lg:hover:bg-red-500 lg:hover:text-neutral-300 
+            w-[52px] h-[52px] flex items-center justify-center
+            rounded-xl bg-transparent text-neutral-300
+            lg:hover:text-red-500
             transition-all duration-300 ease-in-out
+            border-1.5 border-neutral-300
         `,
         target: "_blank",
         rel: "noopener noreferrer",
@@ -46,11 +48,11 @@ export default function ResponsiveNavMenu() {
     }
 
     return (
-        <div ref={navMenuRef} className="z-50 absolute top-0 w-full flex flex-col text-neutral-300">
+        <div ref={navMenuRef} className="z-50 fixed top-0 w-full flex flex-col text-neutral-300">
             <div
                 className={`
                     z-50 w-full py-6 absolute top-0 text-neutral-300
-                    flex justify-center items-start gap-5
+                    flex justify-center items-start gap-4
                     bg-neutral-900 font-bold
                     transition-transform duration-300 ease-in-out
                     ${opened ? 'translate-y-0' : '-translate-y-full'}
@@ -62,13 +64,13 @@ export default function ResponsiveNavMenu() {
                     opened={opened}
                     onClick={toggle}
                     aria-label="Toggle navigation"
-                    className="absolute left-10"
+                    className={`absolute left-10`}
                 />
                 <div className="flex flex-col items-center justify-center gap-6 border-r pr-5">
                     <Link className="w-full text-right" href="/">HOME</Link>
-                    <Link className="w-full text-right" href="/#tour">TOUR</Link>
-                    <Link className="w-full text-right" href="/#watch">WATCH</Link>
-                    <Link className="w-full text-right" href="/#listen">LISTEN</Link>
+                    <Link className="w-full text-right" href="/tour">TOUR</Link>
+                    <Link className="w-full text-right" href="/#watch" onClick={close}>WATCH</Link>
+                    <Link className="w-full text-right" href="/#listen" onClick={close}>LISTEN</Link>
                     <LinkNewTab className="w-full text-right" url="https://netherhour.shop/">SHOP</LinkNewTab>
                 </div>
 
@@ -104,29 +106,41 @@ export default function ResponsiveNavMenu() {
                     </div>
                 </div>
             </div>
+
+            {/* Menu Toggle + Icons */}
             <div
                 className={` 
-                    flex items-center justify-center gap-5
-                    py-6 bg-neutral-900/90
-                    max-[880px]:w-full min-[880px]:fixed min-[880px]:left-[-20px]
-                    min-[880px]:px-4 min-[880px]:py-4 min-[880px]:pl-[35px]
-                    min-[880px]:top-1/2 min-[880px]:transform min-[880px]:-translate-y-1/2
-                    min-[880px]:flex-col min-[880px]:rounded-xl
+                    flex items-center justify-center gap-1
+                    bg-neutral-900 font-extrabold text-sm
+                    border-b-2 border-neutral-300
+                    max-[779px]:w-full 
+                    max-[779px]:h-[50px]
+                    min-[880px]:fixed 
+                    min-[880px]:left-[-10px]
+                    min-[880px]:p-2
+                    min-[880px]:pl-[15px]
+                    min-[880px]:pt-4
+                    min-[880px]:top-1/2 
+                    min-[880px]:transform 
+                    min-[880px]:-translate-y-1/2
+                    min-[880px]:flex-col 
+                    min-[880px]:rounded-xl
+                    min-[880px]:border-2
             `}>
                 <Burger
                     opened={opened}
                     onClick={toggle}
                     aria-label="Toggle navigation"
-                    className="min-[880px]:hidden"
+                    className={`min-[880px]:hidden ${iconProps.className}`}
                 />
                 <SocialIcon url={process.env.nh_link_spotify} {...iconProps} />
                 <SocialIcon url={process.env.nh_link_apple_music} {...iconProps} network="itunes"/>
                 <SocialIcon url={process.env.nh_link_instagram} {...iconProps} />
                 <SocialIcon url={process.env.nh_link_youtube} {...iconProps} />
                 <SocialIcon url={process.env.nh_link_x}
-                            {...iconProps} className={`max-sm:hidden${iconProps.className}`}/>
+                            {...iconProps} className={`max-sm:hidden ${iconProps.className}`}/>
                 <SocialIcon url={process.env.nh_link_facebook}
-                            {...iconProps} className={`max-sm:hidden${iconProps.className}`}/>
+                            {...iconProps} className={`max-sm:hidden ${iconProps.className}`}/>
             </div>
         </div>
     );

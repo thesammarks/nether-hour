@@ -2,9 +2,9 @@ import NhLogo from "@/app/components/NhLogo";
 import VideoBkgd from "@/app/components/VideoBkgd";
 import ScrollIcon from "@/app/components/ScrollIcon";
 import Listen from "@/app/components/Listen/Listen";
-import About from "@/app/components/About/About";
+import Intro from "@/app/components/Intro/Intro";
 import React from "react";
-import Tour from "@/app/components/Tour/Tour";
+import TourPreview from "@/app/components/TourPreview/TourPreview";
 import Footer from "@/app/components/Footer";
 import Nav from "@/app/components/Nav/Nav";
 import Watch from "@/app/components/Watch/Watch";
@@ -19,8 +19,8 @@ export default function Home() {
             <ScrollIcon />
 
             <div className={styles.content}>
-                <About />
-                <Tour />
+                <Intro />
+                <TourPreview />
                 <Watch />
                 <Listen />
                 <Footer />

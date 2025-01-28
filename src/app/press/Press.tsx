@@ -7,23 +7,44 @@ export default function Press() {
         <div id="press" className={styles.container}>
             <div className={styles.title}>PRESS</div>
 
-            <div className={styles.inquiry}>
-                <div className={styles.inquiryItem}>
-                    <span>BOOKING: </span>
-                    <LinkNewTab className={styles.link} url={`mailto:${process.env.nh_email}`}>
-                        {process.env.nh_email}
-                    </LinkNewTab>
+            <div className={styles.pressItem}>
+                <LinkNewTab className={styles.pressTitle} url="https://www.fox7austin.com/video/1561978">
+                    Nether Hour performs in FOX 7 Austin studios
+                </LinkNewTab>
+                <div className={styles.pressDetails}>
+                    <div className={styles.pressOutlet}>FOX 7 Austin</div>
+                    <div>December 13, 2024</div>
                 </div>
-                <div className={styles.inquiryItem}>
-                    <span>PRESS INQUIRIES: </span>
-                    <LinkNewTab className={styles.link} url="mailto:jbonner@milestonepublicity.com">
-                        jbonner@milestonepublicity.com
-                    </LinkNewTab>
-                </div>
+                <blockquote className={styles.quote}>
+                    <p className="line-clamp-5 md:line-clamp-none">
+                        Nether Hour performs some brand new music and talks about upcoming shows.
+                    </p>
+                </blockquote>
             </div>
 
             <div className={styles.pressItem}>
-                <LinkNewTab className={styles.pressTitle} url="https://www.whiskeyriff.com/2024/12/09/16-must-listen-country-artists-i-discovered-in-2024/">
+                <LinkNewTab className={styles.pressTitle}
+                            url="https://americansongwriter.com/austin-based-rockers-nether-hour-crank-up-heat-steamy-80s-inspired-new-single-look-my-way-exclusive-premiere/">
+                    Austin-Based Rockers Nether Hour Crank Up the Heat [...]
+                </LinkNewTab>
+                <div className={styles.pressDetails}>
+                    <div className={styles.pressOutlet}>American Songwriter</div>
+                    <div>By Clayton Edwards | December 12, 2024</div>
+                </div>
+                <blockquote className={styles.quote}>
+                    <p className="line-clamp-5 md:line-clamp-none">
+                        If you find yourself enjoying “Look My Way” more than the rest of Nether Hour’s catalog. You’re
+                        not alone. “‘Look My Way’ is my favorite song we’ve released to date,” Bishop said. “Little bit
+                        of that 80’s pop rock energy and a guitar solo from Bobbo that sounds like a chainsaw growling
+                        through the speakers trying to cut you like Texas Chain Saw Massacre,” he added, describing the
+                        song’s sound.
+                    </p>
+                </blockquote>
+            </div>
+
+            <div className={styles.pressItem}>
+                <LinkNewTab className={styles.pressTitle}
+                            url="https://www.whiskeyriff.com/2024/12/09/16-must-listen-country-artists-i-discovered-in-2024/">
                     16 Must-Listen Country Artists I Discovered In 2024
                 </LinkNewTab>
                 <div className={styles.pressDetails}>
@@ -44,27 +65,8 @@ export default function Press() {
             </div>
 
             <div className={styles.pressItem}>
-                <LinkNewTab className={styles.pressTitle} url="https://americansongwriter.com/austin-based-rockers-nether-hour-crank-up-heat-steamy-80s-inspired-new-single-look-my-way-exclusive-premiere/">
-                    Austin-Based Rockers Nether Hour Crank Up the Heat With Steamy ‘80s-Inspired New Single “Look My
-                    Way” (Exclusive Premiere)
-                </LinkNewTab>
-                <div className={styles.pressDetails}>
-                    <div className={styles.pressOutlet}>American Songwriter</div>
-                    <div>By Clayton Edwards | December 12, 2024</div>
-                </div>
-                <blockquote className={styles.quote}>
-                    <p className="line-clamp-5 md:line-clamp-none">
-                        If you find yourself enjoying “Look My Way” more than the rest of Nether Hour’s catalog. You’re
-                        not alone. “‘Look My Way’ is my favorite song we’ve released to date,” Bishop said. “Little bit
-                        of that 80’s pop rock energy and a guitar solo from Bobbo that sounds like a chainsaw growling
-                        through the speakers trying to cut you like Texas Chain Saw Massacre,” he added, describing the
-                        song’s sound.
-                    </p>
-                </blockquote>
-            </div>
-
-            <div className={styles.pressItem}>
-                <LinkNewTab className={styles.pressTitle} url="https://www.rockandbluesmuse.com/2024/11/04/nether-hour-drops-new-single-long-as-i-aint-alone/">
+                <LinkNewTab className={styles.pressTitle}
+                            url="https://www.rockandbluesmuse.com/2024/11/04/nether-hour-drops-new-single-long-as-i-aint-alone/">
                     Nether Hour Drops New Single 'Long As I Ain’t Alone'
                 </LinkNewTab>
                 <div className={styles.pressDetails}>
@@ -82,19 +84,19 @@ export default function Press() {
                 </blockquote>
             </div>
 
-            <div className={styles.pressItem}>
-                <LinkNewTab className={styles.pressTitle} url="https://www.fox7austin.com/video/1561978">
-                    Nether Hour performs in FOX 7 Austin studios
-                </LinkNewTab>
-                <div className={styles.pressDetails}>
-                    <div className={styles.pressOutlet}>FOX 7 Austin</div>
-                    <div>December 13, 2024</div>
+            <div className={styles.inquiry}>
+                <div className={styles.inquiryItem}>
+                    <span>BOOKING:</span>
+                    <LinkNewTab className={styles.link} url={`mailto:${process.env.nh_email}`}>
+                        {process.env.nh_email}
+                    </LinkNewTab>
                 </div>
-                <blockquote className={styles.quote}>
-                    <p className="line-clamp-5 md:line-clamp-none">
-                        Nether Hour performs some brand new music and talks about upcoming shows.
-                    </p>
-                </blockquote>
+                <div className={styles.inquiryItem}>
+                    <span>PRESS INQUIRIES:</span>
+                    <LinkNewTab className={styles.link} url="mailto:jbonner@milestonepublicity.com">
+                        jbonner@milestonepublicity.com
+                    </LinkNewTab>
+                </div>
             </div>
         </div>
     );

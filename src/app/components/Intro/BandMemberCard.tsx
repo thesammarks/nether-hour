@@ -13,8 +13,8 @@ export default function BandMemberCard(props: BandMemberCardProps) {
     return (
         <Card
             className="
-                relative cursor-pointer text-neutral-200
-                bg-neutral-800 lg:hover:bg-neutral-900
+                relative cursor-pointer text-neutral-300
+                bg-neutral-800 lg:hover:bg-neutral-700
                 transition-all duration-300 ease-in-out
             "
             shadow="sm"
@@ -24,7 +24,7 @@ export default function BandMemberCard(props: BandMemberCardProps) {
         >
             <div>
                 <div className="flex items-center justify-left gap-4">
-                    <div><Avatar size="lg" src={props.img} alt={props.name} /></div>
+                    <div className="rounded-full border-2 p-1 border-red-500"><Avatar size="lg" src={props.img} alt={props.name} /></div>
                     <div className="flex flex-col">
                         <Text className="text-lg font-bold">{props.name}</Text>
                         <Text>{props.handle}</Text>

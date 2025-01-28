@@ -38,24 +38,28 @@ export default function YtVideo(props: YtVideoProps) {
     }, []);
 
     return (
-        <div
-            ref={containerRef}
-            className="youtube-container w-full rounded-xl overflow-hidden"
-        >
-            {isMounted ? (
-                <YouTube
-                    videoId={props.ytId}
-                    opts={{
-                        width: playerSize.width.toString(),
-                        height: playerSize.height.toString(),
-                        playerVars: {
-                            autoplay: 0,
-                        },
-                    }}
-                />
-            ) : (
-                <p>Loading insanely cool content...</p>
-            )}
+        <div className="w-full rounded-xl border-2 border-neutral-300">
+            <div
+                ref={containerRef}
+                className="youtube-container w-full rounded-xl overflow-hidden"
+            >
+                {isMounted ? (
+                    <YouTube
+                        videoId={props.ytId}
+                        opts={{
+                            width: playerSize.width.toString(),
+                            height: playerSize.height.toString(),
+                            playerVars: {
+                                autoplay: 0,
+                            },
+                        }}
+                    />
+                ) : (
+                    <div className={`font-bold bg-neutral-900 p-10`}>
+                        Loading insanely cool content...
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

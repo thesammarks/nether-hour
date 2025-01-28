@@ -6,15 +6,17 @@ export default function NavBar() {
 
     return (
         <div className="
-            max-[880px]:hidden top-0
-            z-50 w-full h-[50px] absolute
+            max-[880px]:hidden
+            fixed top-0
+            z-50 w-full h-[50px]
             flex items-center justify-center gap-5
-            bg-neutral-900/90 tracking-wide text-neutral-200
+            tracking-wide text-neutral-300
+            bg-neutral-900 border-b-2 border-neutral-200
             font-extrabold text-sm
         ">
             <Link className={navLinkClassName} href="/">HOME</Link>
             <Link className={navLinkClassName} href="/about">ABOUT</Link>
-            <Link className={navLinkClassName} href="/#tour">TOUR</Link>
+            <Link className={navLinkClassName} href="/tour">TOUR</Link>
             <Link className={navLinkClassName} href="/press">PRESS</Link>
             <Link className={navLinkClassName} href="/#watch">WATCH</Link>
             <Link className={navLinkClassName} href="/#listen">LISTEN</Link>
