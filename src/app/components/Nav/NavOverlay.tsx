@@ -43,7 +43,7 @@ export default function NavOverlay() {
                 `}
             >
                 <div className={`mt-[50px]`}></div>
-                <NhPageLink/>
+                <div onClick={close}><NhPageLink/></div>
                 <div className={`${styles.navLinks}`}>
                     <Link className={styles.navLink} href="/" onClick={close}>HOME</Link>
                     <Link className={styles.navLink} href="/tour">TOUR</Link>
