@@ -23,7 +23,10 @@ export default function Home() {
                 <TourPreview />
                 <Watch />
                 <Listen />
-                <Footer />
+
+                <div className={`my-8`}>
+                    <Footer />
+                </div>
             </div>
         </main>
     );

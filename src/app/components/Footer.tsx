@@ -5,7 +5,7 @@ import styles from "./Footer.module.scss";
 export default function Footer() {
     return (
         <footer className={styles.container}>
-            <span>© 2025 Nether Family Records</span>
+            <span className={`font-bold`}>© 2025 Nether Family Records</span>
             <span>
                 Website by&nbsp;
                 <b>

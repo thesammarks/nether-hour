@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 20;
 }
 
 .svg {
-    width: 32px;
+    width: 38px;
     fill: var(--neutral-300);
 }

@@ -15,7 +15,9 @@ export default function PageTemplate({ children, className }: PageTemplateProps)
             <Nav />
             <NhPageLink />
             {children}
-            <Footer />
+            <div className={`my-8`}>
+                <Footer />
+            </div>
         </main>
     );
 }
