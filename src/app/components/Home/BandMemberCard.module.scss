@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    cursor: pointer;
+    color: var(--neutral-300);
+    background-color: var(--neutral-800);
+    transition: background-color 0.3s;
+
+    @media (min-width: 1024px) {
+        &:hover {
+            background-color: var(--neutral-700);
+        }
+    }
+}
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+}

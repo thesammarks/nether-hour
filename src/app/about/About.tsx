@@ -1,12 +1,12 @@
 import React from "react";
 import Image from 'next/image'
 import styles from './About.module.scss';
+import pageTemplateStyles from '@/app/PageTemplate.module.scss';
 
 export default function About() {
     return (
         <div className={styles.container}>
-
-            <div className={styles.title}>ABOUT</div>
+            <div className={pageTemplateStyles.title}>ABOUT</div>
 
             <div className={styles.section}>
                 <div className={styles.sectionTitle}>Nether Hour: A Sonic Revival</div>

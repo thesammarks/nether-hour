@@ -1,11 +1,22 @@
 import type {Metadata} from "next";
-import {Inter} from "next/font/google";
+import {Inter, Silkscreen} from "next/font/google";
 import "./globals.scss";
 import {Providers} from "./providers";
 import '@mantine/core/styles.layer.css';
 import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const silkscreen = Silkscreen({
+    subsets: ['latin'],
+    weight: '400',
+    display: 'swap',
+    variable: '--font-silkscreen',
+})
+
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-inter',
+})
 
 /* To-do: Add apple icons and alternative icon sizes */
 export const metadata: Metadata = {
@@ -69,7 +80,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className={`${inter.variable} ${silkscreen.variable}`}>
             <head>
                 {/* Primary Meta Tags */}
                 <title>Nether Hour</title>
