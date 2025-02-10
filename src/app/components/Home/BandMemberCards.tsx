@@ -2,7 +2,7 @@ import BandMemberCard from "./BandMemberCard";
 
 const BandMemberCards = () => {
     return (
-        <div className="flex max-xl:flex-col gap-4 justify-stretch rounded-xl">
+        <div className="flex max-lg:flex-col gap-4 justify-stretch rounded-xl text-nowrap">
             <BandMemberCard
                 name="Bishop"
                 handle="@loverboybishop"
