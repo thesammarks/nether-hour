@@ -27,13 +27,13 @@ export default function About() {
                     <Image
                        className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img01.jpeg"}
+                        src={"/images/about/about_img01.jpg"}
                         alt="About Image 01"
                     />
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img02.jpeg"}
+                        src={"/images/about/about_img02.jpg"}
                         alt="About Image 02"
                     />
                 </div>
@@ -53,19 +53,19 @@ export default function About() {
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img03.png"}
+                        src={"/images/about/about_img03.jpg"}
                         alt="About Image 03"
                     />
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img04.png"}
+                        src={"/images/about/about_img04.jpg"}
                         alt="About Image 04"
                     />
                     <Image
                         className={`${styles.image} ${styles.hiddenLg}`}
                         width={1} height={1}
-                        src={"/images/about/about_img05.jpeg"}
+                        src={"/images/about/about_img05.jpg"}
                         alt="About Image 05"
                     />
                 </div>
@@ -93,19 +93,19 @@ export default function About() {
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img06.jpeg"}
+                        src={"/images/about/about_img06.jpg"}
                         alt="About Image 06"
                     />
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img07.jpeg"}
+                        src={"/images/about/about_img07.jpg"}
                         alt="About Image 07"
                     />
                     <Image
                         className={`${styles.image} ${styles.hiddenLg}`}
                         width={1} height={1}
-                        src={"/images/about/about_img08.jpeg"}
+                        src={"/images/about/about_img08.jpg"}
                         alt="About Image 08"
                     />
                 </div>
@@ -124,13 +124,13 @@ export default function About() {
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img09.jpeg"}
+                        src={"/images/about/about_img09.jpg"}
                         alt="About Image 09"
                     />
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img10.jpeg"}
+                        src={"/images/about/about_img10.jpg"}
                         alt="About Image 10"
                     />
                 </div>
@@ -152,19 +152,19 @@ export default function About() {
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img11.jpeg"}
+                        src={"/images/about/about_img11.jpg"}
                         alt="About Image 11"
                     />
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img12.jpeg"}
+                        src={"/images/about/about_img12.jpg"}
                         alt="About Image 12"
                     />
                     <Image
                         className={styles.image}
                         width={1} height={1}
-                        src={"/images/about/about_img13.jpeg"}
+                        src={"/images/about/about_img13.jpg"}
                         alt="About Image 13"
                     />
                 </div>
