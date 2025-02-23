@@ -17,8 +17,8 @@ export default function TourDates() {
                 date="Feb 27, 2025"
                 city="Austin, TX"
                 title="Nether Hour w/ Underground Springhouse"
-                venue="Mohawk"
-                url="https://mohawkaustin.com/event/?id=-2853509351437825533"
+                venue="Sagebrush"
+                url="https://sagebrushtexas.com"
                 img="/images/tour/feb_27_mohawk.jpg"
             />
             <TourDate
