@@ -45,6 +45,14 @@ export default function TourDates() {
                 url="https://www.etix.com/ticket/p/81575435/nether-hour-wtoadstool-denver-cervantesother-side"
                 img="/images/tour/apr_26_cervantes_otherside.jpg"
             />
+            <TourDate
+                date="Aug 30, 2025"
+                city="Weston, CO"
+                title="Nether Hour"
+                venue="Caveman Music Festival"
+                url="https://cavemanmusicfestival.com/pages/passes"
+                img="/images/tour/aug_30_caveman_music_fest.jpg"
+            />
         </div>
     );
 }
