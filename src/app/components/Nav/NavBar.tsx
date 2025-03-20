@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LinkNewTab from "@/app/components/LinkNewTab";
 
 export default function NavBar() {
     const navLinkClassName = "px-2 py-1 rounded-lg lg:hover:bg-red-500 transition-all duration-300 ease-in-out";
@@ -19,8 +18,8 @@ export default function NavBar() {
             <Link className={`${navLinkClassName} max-[580px]:hidden`} href="/press">PRESS</Link>
             <Link className={`${navLinkClassName} max-[880px]:hidden`} href="/#watch">WATCH</Link>
             <Link className={`${navLinkClassName} max-[780px]:hidden`} href="/#listen">LISTEN</Link>
-            <LinkNewTab className={navLinkClassName} url="https://netherhour.shop/">STORE</LinkNewTab>
-            <LinkNewTab className={navLinkClassName} url={`mailto:${process.env.nh_email as string}`}>CONTACT</LinkNewTab>
+            <Link className={navLinkClassName} href="/shop" target="_blank" rel="noopener noreferrer">STORE</Link>
+            <Link className={navLinkClassName} href="/contact" target="_blank" rel="noopener noreferrer">CONTACT</Link>
         </div>
     );
 }

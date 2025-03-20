@@ -51,8 +51,8 @@ export default function NavOverlay() {
                     <Link className={styles.navLink} href="/about">ABOUT</Link>
                     <Link className={styles.navLink} href="/#watch" onClick={close}>WATCH</Link>
                     <Link className={styles.navLink} href="/#listen" onClick={close}>LISTEN</Link>
-                    <LinkNewTab className={styles.navLink} url="https://netherhour.shop/">SHOP</LinkNewTab>
-                    <LinkNewTab className={styles.navLink} url={`mailto:${process.env.nh_email}`}>CONTACT</LinkNewTab>
+                    <Link className={styles.navLink} href="/shop" target="_blank" rel="noopener noreferrer">STORE</Link>
+                    <Link className={styles.navLink} href="/contact" target="_blank" rel="noopener noreferrer">CONTACT</Link>
                 </div>
                 <div className={styles.iconContainer}>
                     <div className={styles.iconRow}>
