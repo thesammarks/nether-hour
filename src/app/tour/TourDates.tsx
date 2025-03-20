@@ -6,6 +6,14 @@ export default function TourDates() {
     return (
         <div className="w-full flex flex-col gap-5 justify-center items-center">
             <TourDate
+                date="April 3, 2025"
+                city="Lafayette, LA"
+                title="Medicine Men Super Jam"
+                venue="Rock'n'Bowl® de Lafayette"
+                url="https://www.rocknbowl.com/events/medicine-men-super-jam-4-3-25"
+                img="/images/tour/apr_3_medicine_men_super_jam.jpg"
+            />
+            <TourDate
                 date="April 4, 2025"
                 city="New Orleans, LA"
                 title="Nether Hour"
