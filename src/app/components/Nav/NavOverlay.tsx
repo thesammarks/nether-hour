@@ -52,7 +52,7 @@ export default function NavOverlay() {
                     <Link className={styles.navLink} href="/#watch" onClick={close}>WATCH</Link>
                     <Link className={styles.navLink} href="/#listen" onClick={close}>LISTEN</Link>
                     <Link className={styles.navLink} href="/shop" target="_blank" rel="noopener noreferrer">STORE</Link>
-                    <Link className={styles.navLink} href="/contact" target="_blank" rel="noopener noreferrer">CONTACT</Link>
+                    <LinkNewTab className={styles.navLink} url={`mailto:${process.env.nh_email as string}`}>CONTACT</LinkNewTab>
                 </div>
                 <div className={styles.iconContainer}>
                     <div className={styles.iconRow}>

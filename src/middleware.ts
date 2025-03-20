@@ -8,13 +8,9 @@ export function middleware(request: NextRequest) {
         return NextResponse.redirect("https://netherhour.shop/");
     }
 
-    if (request.nextUrl.pathname === "/contact") {
-        return NextResponse.redirect("mailto:netherhour@gmail.com");
-    }
-
     return NextResponse.next();
 }
 
 export const config = {
-    matcher: ["/shop", "/contact"],
+    matcher: [ "/shop" ],
 };
