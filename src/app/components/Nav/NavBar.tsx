@@ -18,7 +18,7 @@ export default function NavBar() {
             font-extrabold text-sm
         ">
             <Link className={`${navLinkClassName} max-[500px]:hidden`} href="/">HOME</Link>
-            <Link className={`${navLinkClassName} text-red-500 lg:hover:bg-neutral-300`} href="/moonshine">{width < 400 ? "NEW" : "NEW RELEASE"}</Link>
+            <Link className={`${navLinkClassName} text-red-500 lg:hover:text-neutral-300`} href="/moonshine">{width < 400 ? "NEW" : "NEW RELEASE"}</Link>
             <Link className={`${navLinkClassName} max-[700px]:hidden`} href="/about">ABOUT</Link>
             <Link className={navLinkClassName} href="/tour">TOUR</Link>
             <Link className={`${navLinkClassName} max-[600px]:hidden`} href="/press">PRESS</Link>
