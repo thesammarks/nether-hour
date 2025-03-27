@@ -1,8 +1,15 @@
+'use client'
+
 import BandMemberCard from "./BandMemberCard";
+import React from "react";
+import {SimpleGrid} from "@mantine/core";
+import {useViewportSize} from "@mantine/hooks";
 
 const BandMemberCards = () => {
+    const { width } = useViewportSize();
+
     return (
-        <div className="flex max-lg:flex-col gap-4 justify-stretch rounded-xl text-nowrap">
+        <SimpleGrid cols={width < 560 ? 1 : 2}>
             <BandMemberCard
                 name="Bishop"
                 handle="@loverboybishop"
@@ -21,7 +28,13 @@ const BandMemberCards = () => {
                 url="https://www.instagram.com/_bercy"
                 img="/images/bercy.png"
             />
-        </div>
+            <BandMemberCard
+                name="Alvin Evans"
+                handle="@allu_muziq"
+                url="https://www.instagram.com/allu_muziq"
+                img="/images/alvin.jpg"
+            />
+        </SimpleGrid>
     );
 };
 
