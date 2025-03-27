@@ -1,8 +1,8 @@
 import type {Metadata} from "next";
 import {Inter, Silkscreen} from "next/font/google";
-import "./globals.scss";
 import {Providers} from "./providers";
 import '@mantine/core/styles.layer.css';
+import "./globals.scss";
 import React from "react";
 
 const silkscreen = Silkscreen({
