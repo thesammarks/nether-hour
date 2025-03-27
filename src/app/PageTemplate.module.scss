@@ -17,10 +17,11 @@
 }
 
 .title {
-    font-family: var(--font-silkscreen);
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-family: var(--font-anton);
+    font-size: 2.5rem;
+    line-height: 2.75rem;
     font-weight: 700;
     align-self: center;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }

@@ -1,15 +1,15 @@
 import type {Metadata} from "next";
-import {Inter, Silkscreen} from "next/font/google";
+import {Anton, Inter} from "next/font/google";
 import {Providers} from "./providers";
 import '@mantine/core/styles.layer.css';
 import "./globals.scss";
 import React from "react";
 
-const silkscreen = Silkscreen({
+const anton = Anton({
     subsets: ['latin'],
     weight: '400',
     display: 'swap',
-    variable: '--font-silkscreen',
+    variable: '--font-anton',
 })
 
 const inter = Inter({
@@ -80,7 +80,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${inter.variable} ${silkscreen.variable}`}>
+        <html lang="en" className={`${inter.variable} ${anton.variable}`}>
             <head>
                 {/* Primary Meta Tags */}
                 <title>Nether Hour</title>

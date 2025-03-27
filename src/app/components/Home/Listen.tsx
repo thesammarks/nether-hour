@@ -1,10 +1,11 @@
 import SpotifyLinkCards from "./SpotifyLinkCards";
 import styles from "./Home.module.scss";
+import pageTemplateStyles from "@/app/PageTemplate.module.scss"
 
 export default function Listen() {
     return (
         <div id="listen" className={styles.contentItemContainer}>
-            <div className={styles.contentItemTitle}>Listen Now</div>
+            <div className={pageTemplateStyles.title}>Listen Now</div>
             <SpotifyLinkCards/>
         </div>
     );

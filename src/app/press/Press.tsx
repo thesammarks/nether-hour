@@ -6,7 +6,7 @@ import pageTemplateStyles from "@/app/PageTemplate.module.scss";
 export default function Press() {
     return (
         <div id="press" className={styles.container}>
-            <div className={pageTemplateStyles.title}>PRESS</div>
+            <div className={pageTemplateStyles.title}>Press</div>
 
             <div className={styles.pressItem}>
                 <LinkNewTab className={styles.pressTitle} url="https://www.fox7austin.com/video/1561978">

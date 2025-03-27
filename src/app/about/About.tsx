@@ -6,7 +6,7 @@ import pageTemplateStyles from '@/app/PageTemplate.module.scss';
 export default function About() {
     return (
         <div className={styles.container}>
-            <div className={pageTemplateStyles.title}>ABOUT</div>
+            <div className={pageTemplateStyles.title}>About</div>
 
             <div className={styles.section}>
                 <div className={styles.sectionTitle}>Nether Hour: A Sonic Revival</div>
