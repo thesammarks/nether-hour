@@ -103,7 +103,7 @@ export default function Moonshine() {
                         className={styles.link}
                     >
                         American Songwriter
-                    </LinkNewTab> raved, “Inspired by ‘80s rock, fuzzy riffs, and dive bar vibes, <em>Look My Way</em>
+                    </LinkNewTab> raved, “Inspired by ‘80s rock, fuzzy riffs, and dive bar vibes, <em>Look My Way</em>{' '}
                     showcases the range of Nether Hour.”
                 </p>
                 <p>
