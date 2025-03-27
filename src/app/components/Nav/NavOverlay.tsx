@@ -1,7 +1,7 @@
 'use client'
 
-import {Burger} from "@mantine/core";
-import {useDisclosure} from "@mantine/hooks";
+import {Burger, SimpleGrid} from "@mantine/core";
+import {useDisclosure, useViewportSize} from "@mantine/hooks";
 import LinkNewTab from "@/app/components/LinkNewTab";
 import Link from "next/link";
 import {
@@ -14,11 +14,11 @@ import {
 } from "@tabler/icons-react";
 import React from "react";
 import NhPageLink from "@/app/components/NhPageLink";
-import Footer from "@/app/components/Footer";
 import styles from "./NavOverlay.module.scss"
 
 export default function NavOverlay() {
     const [opened, { toggle, close }] = useDisclosure();
+    const { width } = useViewportSize();
 
     return (
         <main className="absolute min-h-screen w-full text-neutral-300 text-nowrap">
@@ -42,9 +42,9 @@ export default function NavOverlay() {
                     bg-neutral-900 overflow-scroll
                 `}
             >
-                <div className={`mt-[50px]`}></div>
+                <div className={width < 400 ? "mt-[10px]" : "mt-[50px]"}></div>
                 <div onClick={close}><NhPageLink/></div>
-                <div className={`${styles.navLinks}`}>
+                <SimpleGrid cols={width < 400 ? 2 : 3} className={`${styles.navLinks}`}>
                     <Link className={styles.navLink} href="/" onClick={close}>HOME</Link>
                     <Link className={styles.navLink} href="/tour">TOUR</Link>
                     <Link className={styles.navLink} href="/press">PRESS</Link>
@@ -53,7 +53,7 @@ export default function NavOverlay() {
                     <Link className={styles.navLink} href="/#listen" onClick={close}>LISTEN</Link>
                     <Link className={styles.navLink} href="/shop" target="_blank" rel="noopener noreferrer">STORE</Link>
                     <LinkNewTab className={styles.navLink} url={`mailto:${process.env.nh_email as string}`}>CONTACT</LinkNewTab>
-                </div>
+                </SimpleGrid>
                 <div className={styles.iconContainer}>
                     <div className={styles.iconRow}>
                         <LinkNewTab url={process.env.nh_link_spotify as string}>
@@ -78,7 +78,6 @@ export default function NavOverlay() {
                         </LinkNewTab>
                     </div>
                 </div>
-                <Footer />
             </div>
         </main>
     );
