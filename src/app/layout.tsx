@@ -1,15 +1,15 @@
 import type {Metadata} from "next";
-import {Anton, Inter} from "next/font/google";
+import {Chonburi, Inter} from "next/font/google";
 import {Providers} from "./providers";
 import '@mantine/core/styles.layer.css';
 import "./globals.scss";
 import React from "react";
 
-const anton = Anton({
+const chonburi = Chonburi({
     subsets: ['latin'],
     weight: '400',
     display: 'swap',
-    variable: '--font-anton',
+    variable: '--font-chonburi',
 })
 
 const inter = Inter({
@@ -80,7 +80,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${inter.variable} ${anton.variable}`}>
+        <html lang="en" className={`${inter.variable} ${chonburi.variable}`}>
             <head>
                 {/* Primary Meta Tags */}
                 <title>Nether Hour</title>
