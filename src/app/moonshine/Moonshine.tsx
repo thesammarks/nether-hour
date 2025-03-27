@@ -26,7 +26,7 @@ export default function Moonshine() {
                     through a cloud of cigarette smoke, but that’s just the bait. As Nether Hour puts it themselves, “We
                     aren’t country music, just a bunch of country boys that make music.” <em>Long As I Ain’t Alone</em>{' '}
                     is a neon-lit pool hall at 2 AM — gritty, a little reckless, and always soaked in soul. Yet, as the
-                    band has gained traction outside of Austin’s live music scene — just as The Back Pumas or Charley
+                    band has gained traction outside of Austin’s live music scene — just as The Black Pumas or Charley
                     Crockett, and others before them — it’s impossible to separate them completely from the city’s
                     unique musical roots. As{' '}
                     <LinkNewTab
