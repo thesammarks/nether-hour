@@ -11,7 +11,7 @@ export default function TourDates() {
                 title="Medicine Men Super Jam"
                 venue="Rock'n'Bowl® de Lafayette"
                 url="https://www.rocknbowl.com/events/medicine-men-super-jam-4-3-25"
-                img="/images/tour/apr_3_medicine_men_super_jam.jpg"
+                img="/images/tour/040325.jpg"
             />
             <TourDate
                 date="April 4, 2025"
@@ -19,7 +19,7 @@ export default function TourDates() {
                 title="Nether Hour"
                 venue="Hogs for a Cause Festival"
                 url="https://hogsfest.org/tickets/"
-                img="/images/tour/apr_4_hogs_for_a_cause_festival.jpg"
+                img="/images/tour/040425.jpg"
             />
             <TourDate
                 date="April 5, 2025"
@@ -27,7 +27,7 @@ export default function TourDates() {
                 title="Nether Hour"
                 venue="Mental Awakening Festival"
                 url="https://www.eventbrite.com/e/mental-awakening-2025-tickets-1022769500107"
-                img="/images/tour/apr_5_mental_awakening.jpg"
+                img="/images/tour/040525.jpg"
             />
             <TourDate
                 date="April 10, 2025"
@@ -35,7 +35,7 @@ export default function TourDates() {
                 title="Nether Hour"
                 venue="The Evening Muse"
                 url="https://www.eventbrite.com/e/nether-hour-tickets-1220237746949"
-                img="/images/tour/apr_10_the_evening_muse.jpg"
+                img="/images/tour/041025.jpg"
             />
             <TourDate
                 date="April 11, 2025"
@@ -43,7 +43,7 @@ export default function TourDates() {
                 title="Nether Hour"
                 venue="The Pour House"
                 url="https://www.eventbrite.com/e/nether-hour-tickets-1116592571439"
-                img="/images/tour/apr_11_the_pour_house.jpg"
+                img="/images/tour/041125.jpg"
             />
             <TourDate
                 date="April 26, 2025"
@@ -51,7 +51,7 @@ export default function TourDates() {
                 title="Nether Hour w/ Toadstool"
                 venue="Cervantes' Other Side"
                 url="https://www.etix.com/ticket/p/81575435/nether-hour-wtoadstool-denver-cervantesother-side"
-                img="/images/tour/apr_26_cervantes_otherside.jpg"
+                img="/images/tour/042625.jpg"
             />
             <TourDate
                 date="Aug 30, 2025"
@@ -59,7 +59,7 @@ export default function TourDates() {
                 title="Nether Hour"
                 venue="Caveman Music Festival"
                 url="https://cavemanmusicfestival.com/pages/passes"
-                img="/images/tour/aug_30_caveman_music_fest.jpg"
+                img="/images/tour/083025.jpg"
             />
         </div>
     );
