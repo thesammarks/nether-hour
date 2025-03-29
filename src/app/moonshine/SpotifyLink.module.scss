@@ -1,0 +1,22 @@
+.container {
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    color: var(--neutral-300);
+    background-color: var(--neutral-800);
+    transition: background-color 0.3s;
+    overflow: visible;
+    border: 1px solid var(--neutral-300);
+
+    @media (min-width: 1024px) {
+        &:hover {
+            background-color: var(--neutral-700);
+        }
+    }
+}
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

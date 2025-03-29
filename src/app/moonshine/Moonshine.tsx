@@ -3,11 +3,14 @@ import Image from 'next/image'
 import styles from './Moonshine.module.scss';
 import pageTemplateStyles from '@/app/PageTemplate.module.scss';
 import LinkNewTab from "@/app/components/LinkNewTab";
+import SpotifyLink from "@/app/moonshine/SpotifyLink";
 
 export default function Moonshine() {
     return (
         <div className={styles.container}>
             <div className={pageTemplateStyles.title}>MOONSHINE</div>
+
+            <SpotifyLink />
 
             <div className={styles.section}>
                 <div className={styles.sectionTitle}>MOONSHINE: Nether Hour’s Baptism by Fire</div>
@@ -50,12 +53,12 @@ export default function Moonshine() {
                         src={"/images/moonshine/img02.jpg"}
                         alt="Moonshine Image 02"
                     />
-                    <Image
-                        className={styles.image}
-                        width={1} height={1}
-                        src={"/images/moonshine/img03.jpg"}
-                        alt="Moonshine Image 03"
-                    />
+                    {/*<Image*/}
+                    {/*    className={styles.image}*/}
+                    {/*    width={1} height={1}*/}
+                    {/*    src={"/images/moonshine/img03.jpg"}*/}
+                    {/*    alt="Moonshine Image 03"*/}
+                    {/*/>*/}
                 </div>
                 <p>
                     Then there’s <b><em>Perdido (con el Diablo)</em></b> — a fever dream of Latin grooves and gypsy swagger,
