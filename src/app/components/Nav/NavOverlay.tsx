@@ -29,7 +29,7 @@ export default function NavOverlay() {
                     color="currentColor"
                     aria-label="Toggle navigation"
                     className={styles.burger}
-                    lineSize={2}
+                    lineSize={2.5}
                     size={`sm`}
                 />
             </div>
