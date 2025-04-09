@@ -7,6 +7,12 @@ const SpotifyLinkCards = () => {
             gap-4 justify-items-center
         ">
             <SpotifyLinkCard
+                title="MOONSHINE"
+                subtitle="2025 • Single"
+                url="https://open.spotify.com/album/6pSQ8qGokC2oUAK4hdoJzV"
+                img="/images/listen/moonshine.jpg"
+            />
+            <SpotifyLinkCard
                 title="Look My Way"
                 subtitle="2024 • Single"
                 url="https://open.spotify.com/album/2ITCfEO8ZYCIbOe8QVLiB0"
@@ -35,12 +41,6 @@ const SpotifyLinkCards = () => {
                 subtitle="2023 • Album"
                 url="https://open.spotify.com/album/4FbVIUqviL1clsbL1Ql3wS"
                 img="/images/listen/rattlesnake_gumbo.jpg"
-            />
-            <SpotifyLinkCard
-                title="The Hit"
-                subtitle="2021 • Single"
-                url="https://open.spotify.com/track/3VsBuJJqFL1s20QB87J8AA?si=e5f962c0b65f4705"
-                img="/images/listen/the_hit.jpg"
             />
         </div>
     );
