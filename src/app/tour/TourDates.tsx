@@ -6,30 +6,6 @@ export default function TourDates() {
     return (
         <div className="w-full flex flex-col gap-5 justify-center items-center">
             <TourDate
-                date="April 3, 2025"
-                city="Lafayette, LA"
-                title="Medicine Men Super Jam"
-                venue="Rock'n'Bowl® de Lafayette"
-                url="https://www.rocknbowl.com/events/medicine-men-super-jam-4-3-25"
-                img="/images/tour/040325.jpg"
-            />
-            <TourDate
-                date="April 4, 2025"
-                city="New Orleans, LA"
-                title="Nether Hour"
-                venue="Hogs for a Cause Festival"
-                url="https://hogsfest.org/tickets/"
-                img="/images/tour/040425.jpg"
-            />
-            <TourDate
-                date="April 5, 2025"
-                city="Atlanta, GA"
-                title="Nether Hour"
-                venue="Mental Awakening Festival"
-                url="https://www.eventbrite.com/e/mental-awakening-2025-tickets-1022769500107"
-                img="/images/tour/040525.jpg"
-            />
-            <TourDate
                 date="April 10, 2025"
                 city="Charlotte, NC"
                 title="Nether Hour"
