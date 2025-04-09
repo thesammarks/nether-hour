@@ -2,6 +2,7 @@ import React from "react";
 import Image from 'next/image'
 import styles from './About.module.scss';
 import pageTemplateStyles from '@/app/PageTemplate.module.scss';
+import LinkNewTab from "@/app/components/LinkNewTab";
 
 export default function About() {
     return (
@@ -74,13 +75,16 @@ export default function About() {
             <div className={styles.section}>
                 <div className={styles.sectionTitle}>New Album: MOONSHINE</div>
                 <p>
-                    On <strong>Friday, March 14, 2025</strong>, brace yourself for the band’s next eruption
-                    titled <strong>MOONSHINE</strong> — an eight-track album that promises to be the raucous,
-                    intoxicating follow-up to their previous escapade, <strong>SUNSHINE</strong>. Released through
-                    <em>Nether Family Records</em>, MOONSHINE bottles the unbridled energy of their live shows into a
-                    sonic elixir so potent, it’ll make you tipsy just by listening. It’s a fierce concoction of deep
-                    grooves, smooth vocals, and irresistible beats, crafted from late-night jam sessions and back-alley
-                    dives where the whiskey flows as freely as the music.
+                    On <strong>Friday, March 14, 2025</strong>, the group released{' '}
+                    <LinkNewTab className={styles.link} url="https://open.spotify.com/album/6pSQ8qGokC2oUAK4hdoJzV">
+                        MOONSHINE
+                    </LinkNewTab>{' '}
+                    — an eight-track album that promises to be the raucous, intoxicating follow-up to their previous
+                    escapade, <strong>SUNSHINE</strong>. Released through <em>Nether Family Records</em>, MOONSHINE
+                    bottles the unbridled energy of their live shows into a sonic elixir so potent, it’ll make you tipsy
+                    just by listening. It’s a fierce concoction of deep grooves, smooth vocals, and irresistible beats,
+                    crafted from late-night jam sessions and back-alley dives where the whiskey flows as freely as the
+                    music.
                 </p>
                 <p>
                     MOONSHINE distills the very essence of Nether Hour: raw, untamed, and deeply rooted in Austin’s
@@ -140,13 +144,19 @@ export default function About() {
                 <div className={styles.sectionTitle}>Future Plans</div>
                 <p>
                     As the band begins to garner some well-deserved recognition, they’re pushing their tenacious sound
-                    beyond Austin’s borders and taking it across state lines. For the remainder of 2024 and throughout
-                    2025, they’re crashing into new territories like Colorado and the Southeast, and even making waves
-                    on the Fraternity circuit.
+                    beyond Austin’s borders and taking it across state. Throughout 2025, they’re crashing into new
+                    territories like Colorado and the Southeast. Check out the latest{' '}
+                    <LinkNewTab className={styles.link} url="/tour">
+                        tour dates
+                    </LinkNewTab>{' '}
+                    now!
                 </p>
                 <p>
-                    <strong>MOONSHINE</strong> is slated for release on <strong>Friday, March 14, 2025</strong>. Don’t
-                    miss the opportunity to dive headfirst into the raw energy and sonic brilliance of Nether Hour!
+                    <LinkNewTab className={styles.link} url="https://open.spotify.com/album/6pSQ8qGokC2oUAK4hdoJzV">
+                        MOONSHINE IS OUT NOW!
+                    </LinkNewTab>{' '}
+                    Don’t miss the opportunity to dive headfirst into the raw energy and sonic brilliance of Nether
+                    Hour!
                 </p>
                 <div className={styles.imageRow}>
                     <Image
